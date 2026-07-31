@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Programs — GiveWise Education Foundation</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+<link rel="stylesheet" href="../Styles/global.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+</head>
+<body>
+     
+    <header
+      id="site-header"
+      class="fixed top-0 inset-x-0 z-50 bg-white border-b border-black/5 transition-shadow"
+    >
+      <div
+        class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 flex items-center justify-between h-20"
+      >
+        <a href="#" class="flex items-center gap-2 shrink-0">
+          <div id="logo" class="w-28 sm:w-33 h-12 sm:h-15">
+            <img src="/src/assets/Frame1.png" alt="logo" class="w-full h-full object-contain" />
+          </div>
+        </a>
+
+        <nav
+          class="hidden lg:flex items-center gap-9 text-sm text-ink/70 font-medium"
+        >
+          <a href="/index.html" class="hover:text-ink transition-colors">Home</a>
+          <a href="/campaigns.html" class="hover:text-ink transition-colors"
+            >Campaigns</a
+          >
+          <a href="/event.html" class="hover:text-ink transition-colors">Events</a>
+          <a href="#about" class="hover:text-ink transition-colors">About Us</a>
+          <a href="/blog.html" class="hover:text-ink transition-colors">Blog</a>
+          <a href="#contact" class="hover:text-ink transition-colors"
+            >Contact Us</a
+          >
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-6">
+          <a
+            href="#donate"
+            class="inline-flex items-center rounded-full bg-[#183a67] text-white text-sm font-semibold px-6 py-2.5 hover:bg-amberdark transition-colors"
+            >Donate Now</a
+          >
+        </div>
+
+        <button
+          id="menu-btn"
+          aria-label="Toggle menu"
+          class="lg:hidden text-ink p-2"
+        >
+          <svg
+            id="icon-open"
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+          </svg>
+          <svg
+            id="icon-close"
+            class="hidden"
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="lg:hidden hidden border-t border-black/5 bg-white px-5 sm:px-6 py-6 space-y-5"
+      >
+        <a href="/index.html" class="block text-ink/80 font-medium">Home</a>
+        <a href="/campaigns.html" class="block text-ink/80 font-medium">Campaigns</a>
+        <a href="/event.html" class="block text-ink/80 font-medium">Events</a>
+        <a href="#about" class="block text-ink/80 font-medium">About Us</a>
+        <a href="/blog.html" class="block text-ink/80 font-medium">Blog</a>
+        <a href="#contact" class="block text-ink/80 font-medium">Contact Us</a>
+        <a
+          href="#donate"
+          class="inline-flex items-center rounded-full bg-amber text-ink text-sm font-semibold px-6 py-2.5"
+          >Donate Now</a
+        >
+      </div>
+    </header>
+
+     <!-- ================= HERO ================= -->
+    <section id="home" class="relative pt-20">
+      <div class="relative min-h-[600px] sm:min-h-[700px] lg:min-h-[760px] flex items-center">
+        <img
+          id="hero-img"
+          src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600&auto=format&fit=crop"
+          alt="Students learning in a classroom"
+          class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
+        />
+        <div
+          class="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,27,48,0.88)_0%,rgba(8,27,48,0.70)_43%,rgba(8,27,48,0.20)_76%,rgba(8,27,48,0.08)_100%),linear-gradient(0deg,rgba(8,27,48,0.38)_0%,rgba(8,27,48,0)_48%)]"
+        ></div>
+
+        <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 w-full py-14 sm:py-20">
+          <p
+            class="flex items-center gap-[10px] reveal text-amber text-xs font-medium tracking-[0.2em] uppercase mb-5"
+          >
+            <span class="rounded-xs block w-[40px] h-[1px] bg-amber"></span
+            >Campaigns
+          </p>
+          <h1
+            class="reveal font-display font-[400] text-white text-3xl sm:text-5xl lg:text-[76px] leading-[1.1] lg:leading-[1.08] max-w-xl"
+          >
+            Changing Lives Through Education
+          </h1>
+          <p
+            class="reveal font-light mt-6 max-w-[600px] text-white/70 text-sm sm:text-base leading-relaxed"
+          >
+            Every contribution creates opportunities for children to learn, grow, and build a brighter future. Explore our campaigns and become a part of meaningful change. 
+          </p>
+
+          <div class="reveal mt-8 sm:mt-9 flex flex-wrap items-center gap-3 sm:gap-4">
+            <a
+              href="#donate"
+              class="inline-flex items-center rounded-full bg-amber text-ink text-sm font-semibold px-6 sm:px-7 py-3 sm:py-3.5 hover:bg-amberdark transition-colors"
+              >Support A Student</a
+            >
+            <a
+              href="#about"
+              class="inline-flex items-center rounded-full border border-white/30 text-white text-sm font-semibold px-6 sm:px-7 py-3 sm:py-3.5 hover:bg-white/10 transition-colors"
+              >Discover Our Work</a
+            >
+          </div>
+
+      
+
+        <div
+          class="hidden xl:flex flex-col absolute top-1/2 right-8 2xl:right-20 gap-3 border-l border-white/15 px-5 py-4 max-w-xs"
+        >
+          <h3 class="text-white">Learning with dignity</h3>
+          <p class="text-white/85 text-xs font-light leading-snug w-40">
+            We support the student as a whole academically, emotionally, and
+            socially.
+          </p>
+        </div>
+
+        <div class="hidden md:flex absolute bottom-6 right-5 lg:right-10 xl:right-20 items-center gap-5">
+          <!-- Slide progress bars -->
+          <div id="hero-progress" class="hidden sm:flex items-center gap-2">
+            <span
+              class="h-[3px] w-10 rounded-full bg-amber transition-colors duration-300"
+              data-index="0"
+            ></span>
+            <span
+              class="h-[3px] w-10 rounded-full bg-white/25 transition-colors duration-300"
+              data-index="1"
+            ></span>
+            <span
+              class="h-[3px] w-10 rounded-full bg-white/25 transition-colors duration-300"
+              data-index="2"
+            ></span>
+          </div>
+          <button
+            id="hero-prev"
+            aria-label="Previous slide"
+            class="w-11 h-11 rounded-full border pr-3 border-white/25 text-white flex items-center justify-center hover:bg-white/10 transition-colors"
+          >
+            <svg
+              fill="#fff"
+              viewBox="0 0 24 24"
+              id="left-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon line"
+              stroke="#fff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  id="primary"
+                  d="M21,12H12M15,9,12,12l3,3"
+                  style="
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 1;
+                  "
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <button
+            id="hero-next"
+            aria-label="Next slide"
+            class="w-11 h-11 rounded-full bg-none pl-3 border border-white/25 flex items-center justify-center hover:bg-white/10 transition-colors"
+          >
+            <svg
+              fill="#fff"
+              viewBox="0 0 24 24"
+              id="right-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon line"
+              stroke="#fff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  id="primary"
+                  d="M3,12H12M9,9l3,3-3,3"
+                  style="
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 1;
+                  "
+                ></path>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+     <section id="programs" class="bg-white py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+        <div class="max-w-2xl mb-10 lg:mb-16">
+          <p
+             class="reveal text-amber text-xs font-semibold tracking-[0.2em] uppercase mb-4 flex items-center gap-1"
+          >
+            <span class="rounded-xs block w-[40px] h-[1px] bg-amber"></span
+            >Make an Impact
+          </p>
+          <h2
+            class="reveal font-display relative font-[600]  text-2xl sm:text-3xl lg:text-[75px] leading-tight text-[#102a4b]"
+          >
+            Our Activity Campaign
+          </h2>
+          <p class="reveal   top-270 left-200 border-l-[0.5px] absolute border-[#E3E8EE] p-3 mt-5 text-sm sm:text-base text-[#667085]  leading-relaxed">
+            Support initiatives that transform education and<br>empower communities.
+          </p>
+        </div>
+
+  <div class="space-y-6 lg:space-y-8">
+    <!-- campaign 1 -->
+<div
+  class="reveal grid md:grid-cols-2 rounded-3xl overflow-hidden bg-white/[0.03] border border-[#DDE2E8]"
+>
+  <img
+    src="/src/assets/Education.png"
+    alt="Stack of books"
+    class="w-full h-56 sm:h-72 md:h-full object-cover"
+  />
+  <div class="relative overflow-hidden bg-gradient-to-bl from-amber/15 via-white to-white p-6 sm:p-8 md:p-10 flex flex-col justify-center">
+    <span
+      class="pointer-events-none select-none absolute top-2 right-6 sm:right-8 md:right-10 font-display font-extrabold text-[70px] sm:text-[90px] leading-none text-[#EEF1F4]"
+      aria-hidden="true"
+    >01</span>
+    <p
+      class="relative text-xs font-semibold tracking-[0.15em] uppercase text-amber mb-4 flex items-center gap-1"
+    >
+      <span class="rounded-xs block w-[40px] h-[1px] bg-amber"></span>
+      Education Access
+    </p>
+    <h3 class="relative font-display font-medium text-3xl sm:text-4xl md:text-5xl lg:text-[56px] leading-tight text-[#102a4b] mb-3">
+      Every Child Deserves Education
+    </h3>
+    <p class="relative text-[#667085] text-sm leading-relaxed mb-6">
+      Help provide books, uniforms, and meaningful educational opportunities to children from underserved communities. 
+    </p>
+    <ul class="relative flex flex-wrap gap-2 mb-8">
+      <li class="text-[#102a4b] bg-[#FBFCFD] text-sm px-4 py-2 border border-[#E3E8EE] rounded-[10px]">
+        Books &amp; Learning Materials
+      </li>
+      <li class="text-[#102a4b] bg-[#FBFCFD] text-sm px-4 py-2 border border-[#E3E8EE] rounded-[10px]">
+        School Readiness
+      </li><br>
+      <li class="text-[#102a4b] bg-[#FBFCFD] text-sm px-4 py-2 border border-[#E3E8EE] rounded-[10px]">
+        Community Support
+      </li>
+    </ul>
+    <div class="relative bg-cream p-3 mb-9 border-l-2 text-[#5e6570] border-[#D59A35]">
+        Every contribution helps remove a barrier between a deserving <br> child and a classroom. 
+    </div>
+    <div class="relative flex flex-wrap gap-4">
+      <a href="#donate"
+        class="inline-flex items-center rounded-full bg-[#102a4b] text-white text-sm font-semibold px-6 py-3 hover:bg-amberdark transition-colors"
+        >Donate Now</a
+      >
+      <a href="#"
+        class="inline-flex items-center rounded-full border border-[#DDE2E8] text-[#102a4b] text-sm font-semibold px-6 py-3 hover:bg-white/10 transition-colors"
+        >Program Details</a
+      >
+    </div>
+  </div>
+</div>
+
+          <!-- campaign 2 -->
+          <div
+  class="reveal grid md:grid-cols-2 rounded-3xl overflow-hidden bg-white/[0.03] border border-[#DDE2E8]"
+>
+  <div class="relative overflow-hidden bg-gradient-to-bl from-amber/15 via-white to-white p-6 sm:p-8 md:p-10 flex flex-col justify-center">
+    <span
+      class="pointer-events-none select-none absolute top-2 right-6 sm:right-8 md:right-10 font-display font-extrabold text-[70px] sm:text-[90px] leading-none text-[#EEF1F4]"
+      aria-hidden="true"
+    >02</span>
+
+    <p class="relative text-xs font-semibold tracking-[0.15em] uppercase text-amber mb-4 flex items-center gap-1">
+      <span class="rounded-xs block w-[40px] h-[1px] bg-amber"></span>
+      Digital Learning
+    </p>
+    <h3 class="relative font-display font-medium text-3xl sm:text-4xl md:text-5xl lg:text-[56px] leading-tight text-[#102a4b] mb-3">
+      Digital Pathshala
+    </h3>
+    <p class="relative text-[#667085] text-sm leading-relaxed mb-6">
+      Support digital learning by providing computers, internet access, and modern learning resources to rural students.
+    </p>
+    <ul class="relative flex flex-wrap gap-2 mb-8">
+      <li class="text-[#102a4b] bg-[#FBFCFD] text-sm px-4 py-2 border border-[#E3E8EE] rounded-[10px]">Digital Literacy</li>
+      <li class="text-[#102a4b] bg-[#FBFCFD] text-sm px-4 py-2 border border-[#E3E8EE] rounded-[10px]">Smart Learning</li>
+      <li class="text-[#102a4b] bg-[#FBFCFD] text-sm px-4 py-2 border border-[#E3E8EE] rounded-[10px]">Future Skills</li>
+    </ul>
+    <div class="relative bg-cream p-3 mb-9 border-l-2 text-[#5e6570] border-[#D59A35]">
+       Technology becomes meaningful when it reaches students who <br> have the talent but not the access. 
+    </div>
+    <div class="relative flex flex-wrap gap-4">
+      <a href="#donate" class="inline-flex items-center rounded-full bg-[#102a4b] text-white text-sm font-semibold px-6 py-3 hover:bg-amberdark transition-colors">Donate Now</a>
+      <a href="#" class="inline-flex items-center rounded-full border border-[#DDE2E8] text-[#102a4b] text-sm font-semibold px-6 py-3 hover:bg-white/10 transition-colors">Program Details</a>
+    </div>
+  </div>
+
+  <img
+    src="/src/assets/digitalPathsala.png"
+    alt="Student learning on a laptop"
+    class="w-full h-56 sm:h-72 md:h-full object-cover order-1 md:order-2"
+  />
+</div>
+         
+    </section>
+
+    <!-- ================= COMMUNITY STATS ================= -->
+    <section class="bg-white py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12 lg:mb-16">
+          <p class="reveal text-amber text-xs font-semibold tracking-[0.2em] uppercase mb-4 flex items-center justify-center gap-2">
+            <span class="rounded-xs block w-[26px] h-[1px] bg-amber"></span>
+            Growing Together
+          </p>
+          <h2 class="reveal font-display font-extrabold text-[#102a4b] text-3xl sm:text-4xl lg:text-[44px] leading-[1.15] mb-5">
+            A Community Built<br class="hidden sm:block" />
+            Around Purpose
+          </h2>
+          <p class="reveal text-stone text-sm sm:text-base leading-relaxed">
+            People and institutions working together to expand opportunity through education.
+          </p>
+        </div>
+
+        <!-- Stat Cards -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+
+          <div class="reveal bg-white rounded-2xl border border-gray-100 shadow-[0_10px_30px_rgba(16,42,75,0.06)] p-6 sm:p-7">
+            <span class="w-9 h-9 rounded-lg bg-[#F2F4F7] flex items-center justify-center text-[#102a4b] mb-6">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" />
+              </svg>
+            </span>
+            <p class="font-display font-extrabold text-2xl sm:text-3xl text-[#102a4b] counter" data-target="15000" data-suffix="K+" data-divide="1000">
+              0
+            </p>
+            <p class="text-stone text-xs sm:text-sm mt-1">Volunteers</p>
+          </div>
+
+          <div class="reveal bg-white rounded-2xl border border-gray-100 shadow-[0_10px_30px_rgba(16,42,75,0.06)] p-6 sm:p-7">
+            <span class="w-9 h-9 rounded-lg bg-[#F2F4F7] flex items-center justify-center text-[#102a4b] mb-6">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
+              </svg>
+            </span>
+            <p class="font-display font-extrabold text-2xl sm:text-3xl text-[#102a4b] counter" data-target="380" data-suffix="+">
+              0
+            </p>
+            <p class="text-stone text-xs sm:text-sm mt-1">Sponsors</p>
+          </div>
+
+          <div class="reveal bg-white rounded-2xl border border-gray-100 shadow-[0_10px_30px_rgba(16,42,75,0.06)] p-6 sm:p-7">
+            <span class="w-9 h-9 rounded-lg bg-[#F2F4F7] flex items-center justify-center text-[#102a4b] mb-6">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 11.5 12 4l9 7.5" />
+                <path d="M5 10v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9" />
+              </svg>
+            </span>
+            <p class="font-display font-extrabold text-2xl sm:text-3xl text-[#102a4b] counter" data-target="125" data-suffix="">
+              0
+            </p>
+            <p class="text-stone text-xs sm:text-sm mt-1">Branches</p>
+          </div>
+
+          <div class="reveal bg-white rounded-2xl border border-gray-100 shadow-[0_10px_30px_rgba(16,42,75,0.06)] p-6 sm:p-7">
+            <span class="w-9 h-9 rounded-lg bg-[#F2F4F7] flex items-center justify-center text-[#102a4b] mb-6">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l1.8 5.6L19.5 9l-5.7 1.4L12 16l-1.8-5.6L4.5 9l5.7-1.4L12 2Z" />
+              </svg>
+            </span>
+            <p class="font-display font-extrabold text-2xl sm:text-3xl text-[#102a4b] counter" data-target="75" data-suffix="+">
+              0
+            </p>
+            <p class="text-stone text-xs sm:text-sm mt-1">Awards</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+      <section class="relative overflow-hidden">
+    <img
+      src="/src/assets/JoinUs.png"
+      alt="Students engaged in a classroom, one raising a hand"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0B1B2E]/90 via-[#0B1B2E]/65 to-[#0B1B2E]/25"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0B1B2E]/75 via-transparent to-transparent"></div>
+ 
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 py-20 sm:py-24 lg:py-28">
+      <div class="max-w-3xl">
+        <p class="text-amber text-xs font-semibold tracking-[0.2em] uppercase mb-5 flex items-center gap-2">
+          <span class="rounded-xs block w-[26px] h-[1px] bg-amber"></span>
+          Join Our Mission
+        </p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[52px] leading-[1.15] text-white mb-6">
+          Together, We Can Light The Lamp Of Knowledge In Every Corner Of Our Nation.
+        </h2>
+        <p class="text-white/70 text-sm sm:text-base leading-relaxed max-w-xl mb-8">
+          Join GiveWise Educational Foundation in creating equal opportunities
+          through education, compassion, and community support.
+        </p>
+        <div class="flex flex-wrap items-center gap-4">
+          <a
+            href="#donate"
+            class="inline-flex items-center rounded-full bg-amber text-[#2b1c07] text-sm font-semibold px-6 py-3 hover:bg-amberdark transition-colors"
+            >Join us</a
+          >
+          <a
+            href="#"
+            class="inline-flex items-center rounded-full border border-white/30 text-white text-sm font-semibold px-6 py-3 hover:bg-white/10 transition-colors"
+            >Become a volunteer</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========stay connected============== -->
+<section class="bg-[#e3e8ee] py-10 px-4 sm:px-6 lg:px-20">
+  <div
+    class="max-w-[1178px] mx-auto bg-white rounded-2xl lg:rounded-3xl
+    p-6 sm:p-8 lg:p-14
+    flex flex-col lg:flex-row
+    items-center justify-between
+    gap-10 lg:gap-20">
+
+    <!-- Left Content -->
+    <div class="w-full max-w-[513px] text-center lg:text-left">
+
+      <div class="flex items-center justify-center lg:justify-start gap-3 mb-4">
+        <span class="w-7 h-[2px] bg-[#C79A51]"></span>
+        <span class="text-[12px] sm:text-[13px] font-semibold tracking-[1.5px] uppercase text-[#C79A51]">
+          Newsletter
+        </span>
+      </div>
+
+      <h2
+        class="font-display
+        text-[30px]
+        sm:text-[38px]
+        lg:text-[48px]
+        leading-tight
+        font-semibold
+        text-[#0A223A]
+        mb-5">
+        Stay Connected
+      </h2>
+
+      <p
+        class="text-[14px]
+        sm:text-[15px]
+        leading-7
+        text-[#7B8794]
+        mb-7
+        max-w-full
+        lg:max-w-[420px]
+        mx-auto
+        lg:mx-0">
+        Subscribe to receive updates about campaigns, success stories, and upcoming events.
+      </p>
+
+      <!-- Form -->
+      <form
+        class="flex flex-col sm:flex-row w-full gap-3 sm:gap-0"
+        onsubmit="return false;">
+
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          class="h-12 flex-1 px-5 border border-[#E5E7EB]
+          rounded-lg sm:rounded-l-lg sm:rounded-r-none
+          outline-none
+          text-sm
+          placeholder:text-[#9CA3AF]
+          focus:border-[#153656]" />
+
+        <button
+          class="h-12
+          px-7
+          rounded-lg
+          sm:rounded-l-none
+          sm:rounded-r-lg
+          bg-[#153656]
+          text-white
+          font-medium
+          text-sm
+          hover:opacity-90">
+          Subscribe
+        </button>
+
+      </form>
+
+    </div>
+
+    <!-- Illustration -->
+    <div class="flex-shrink-0 w-full max-w-[452px] aspect-[452/278] rounded-[24px] bg-[#FCF8F1] overflow-hidden">
+<svg viewBox="0 0 452 278" class="w-full h-full">
+
+  <defs>
+    <!-- Book Shadow -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#000000" flood-opacity=".18"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="452" height="278" rx="24" fill="#FCF8F1"/>
+
+  <!-- Yellow Circle -->
+  <circle
+      cx="292"
+      cy="135"
+      r="92"
+      fill="#F3D38C"/>
+
+  <!-- Body -->
+  <path
+      d="M194 133
+         C198 108 214 95 226 95
+         C238 95 254 108 258 133
+         Z"
+      fill="#D89A2F"/>
+
+  <!-- Head -->
+  <circle
+      cx="226"
+      cy="87"
+      r="20"
+      fill="#C88957"/>
+
+  <!-- Book -->
+  <g filter="url(#shadow)">
+
+    <!-- Bottom Blue -->
+    <path
+      d="
+      M152 199
+      Q190 204 226 210
+      Q262 204 300 199
+      Q306 199 306 189
+      L306 174
+      L146 174
+      L146 189
+      Q146 199 152 199
+      Z"
+      fill="#17375C"/>
+
+    <!-- Left Page -->
+    <path
+      d="
+      M146 112
+      Q185 107 226 112
+      L226 188
+      Q186 181 146 186
+      Q138 186 138 176
+      L138 124
+      Q138 114 146 112
+      Z"
+      fill="#FFFFFF"/>
+
+    <!-- Right Page -->
+    <path
+      d="
+      M306 112
+      Q267 107 226 112
+      L226 188
+      Q266 181 306 186
+      Q314 186 314 176
+      L314 124
+      Q314 114 306 112
+      Z"
+      fill="#FFFFFF"/>
+
+    <!-- Center Fold -->
+    <line
+        x1="226"
+        y1="112"
+        x2="226"
+        y2="188"
+        stroke="#ECECEC"
+        stroke-width="2"/>
+
+  </g>
+
+</svg>
+</div>
+
+  </div>
+</section>
+    <!-- ================= FOOTER ================= -->
+    <footer id="contact" class="bg-[#102a4b] pt-16 lg:pt-20 pb-8">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 pb-12 lg:pb-14 border-b border-white/10"
+        >
+          <div class="sm:col-span-2 lg:col-span-2">
+            <div class="flex items-center gap-2 mb-4">
+              <a href="#" class="flex items-center gap-2 shrink-0">
+                <div id="logo" class="w-28 h-12">
+                  <img src="/src/assets/Frame2.png" alt="logo" class="w-full h-full object-contain" />
+                </div>
+              </a>
+            </div>
+            <p class="text-white/50 text-sm leading-relaxed max-w-xs">
+              GiveWise Education Foundation supports students with quality
+              education, mentorship, digital skills, scholarships, and a fair
+              start in life.
+            </p>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-white font-display font-semibold text-sm mb-5">
+              Quick Links
+            </h4>
+            <ul class="space-y-3 text-sm text-white/50">
+              <li>
+                <a href="/src/Pages/index.html" class="hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="/src/Pages/campaigns.html" class="hover:text-white transition-colors"
+                  >Campaigns</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="/src/Pages/blog.html" class="hover:text-white transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-white transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-white font-display font-semibold text-sm mb-5">
+              Programs
+            </h4>
+            <ul class="space-y-3 text-sm text-white/50">
+              <li>
+                <a href="#programs" class="hover:text-white transition-colors"
+                  >Digital Pathshala</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >For Students</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Mera Sankalp</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Volunteer Program</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-white font-display font-semibold text-sm mb-5">
+              Contact
+            </h4>
+            <ul class="space-y-3 text-sm text-white/50">
+              <li>
+                <a href="#home" class="hover:text-white transition-colors"
+                  >Hello@givwise.org</a
+                >
+              </li>
+              <li>
+                <a href="#programs" class="hover:text-white transition-colors"
+                  >+1 234567890</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-white transition-colors"
+                  >New Delhi, India</a
+                >
+              </li>
+              <li>
+                <a href="/src/Pages/blog.html" class="hover:text-white transition-colors"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full sm:col-span-2 md:col-span-1">
+            <h4 class="text-white font-display font-semibold text-sm mb-5 w-40">
+              Stay Connected
+            </h4>
+            <p class="text-white/50 text-sm mb-4">
+              Get updates on stories, students, and campaigns.
+            </p>
+            <form id="newsletter-form" class="flex w-full">
+              <form id="newsletter-form" class="flex w-full">
+              <input
+                type="email"
+                required
+                placeholder="Your email"
+                class="flex-1 w-200 rounded-bl-[10px] rounded-tl-[10px] bg-white/10 border border-white/15 text-white text-sm placeholder-white/40 px-4 py-2.5 outline-none"
+              />
+              <button
+                type="submit"
+                class="shrink-0 rounded-br-[10px] rounded-tr-[10px] font-bold bg-amber text-ink text-sm  px-4 hover:bg-amberdark transition-colors"
+              >
+                →
+              </button>
+            </form>
+            <p id="newsletter-msg" class="text-amber text-xs mt-3 hidden">
+              Thanks for subscribing!
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"
+        >
+          <p class="text-white/40 text-xs text-center sm:text-left">
+            © <span id="year"></span> GiveWise Education Foundation. All rights
+            reserved.
+          </p>
+          <div class="flex gap-6 text-white/40 text-xs">
+            <a href="#" class="hover:text-white transition-colors"
+              >facebook</a
+            >
+            <a href="#" class="hover:text-white transition-colors"
+              >Instagram</a
+            >
+             <a href="#" class="hover:text-white transition-colors"
+              >LinkdIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/src/JS/index.js"></script>
+</body>
+</html>

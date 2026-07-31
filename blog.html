@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Events Timeline Section</title>
+
+ <link rel="stylesheet" href="../../dist/output.css" />
+    <link rel="stylesheet" href="../Styles/global.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Noto+Sans+Devanagari:wght@600;700&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  body { font-family: 'Inter', sans-serif; }
+  .devanagari { font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+</style>
+</head>
+<body class="bg-white">
+        <header
+      id="site-header"
+      class="fixed top-0 inset-x-0 z-50 bg-white border-b border-black/5 transition-shadow"
+    >
+      <div
+        class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 flex items-center justify-between h-20"
+      >
+        <a href="#" class="flex items-center gap-2 shrink-0">
+          <div id="logo" class="w-28 sm:w-33 h-12 sm:h-15">
+            <img src="/src/assets/Frame1.png" alt="logo" class="w-full h-full object-contain" />
+          </div>
+        </a>
+
+        <nav
+          class="hidden lg:flex items-center gap-9 text-sm text-ink/70 font-medium"
+        >
+          <a href="/index.html" class="hover:text-ink transition-colors">Home</a>
+          <a href="/campaigns.html" class="hover:text-ink transition-colors"
+            >Campaigns</a
+          >
+          <a href="/event.html" class="hover:text-ink transition-colors">Events</a>
+          <a href="#about" class="hover:text-ink transition-colors">About Us</a>
+          <a href="/public/blog.html" class="hover:text-ink transition-colors">Blog</a>
+          <a href="#contact" class="hover:text-ink transition-colors"
+            >Contact Us</a
+          >
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-6">
+          <a
+            href="#donate"
+            class="inline-flex items-center rounded-full bg-[#183a67] text-white text-sm font-semibold px-6 py-2.5 hover:bg-amberdark transition-colors"
+            >Donate Now</a
+          >
+        </div>
+
+        <button
+          id="menu-btn"
+          aria-label="Toggle menu"
+          class="lg:hidden text-ink p-2"
+        >
+          <svg
+            id="icon-open"
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+          </svg>
+          <svg
+            id="icon-close"
+            class="hidden"
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="lg:hidden hidden border-t border-black/5 bg-white px-5 sm:px-6 py-6 space-y-5"
+      >
+        <a href="/index.html" class="block text-ink/80 font-medium">Home</a>
+        <a href="/public/campaigns.html" class="block text-ink/80 font-medium">Campaigns</a>
+        <a href="/public/event.html" class="block text-ink/80 font-medium">Events</a>
+        <a href="#about" class="block text-ink/80 font-medium">About Us</a>
+        <a href="/public/blog.html" class="block text-ink/80 font-medium">Blog</a>
+        <a href="#contact" class="block text-ink/80 font-medium">Contact Us</a>
+        <a
+          href="#donate"
+          class="inline-flex items-center rounded-full bg-amber text-ink text-sm font-semibold px-6 py-2.5"
+          >Donate Now</a
+        >
+      </div>
+    </header>
+     <section class="relative overflow-hidden mt-20 lg:mt-24">
+    <img
+      src="/src/assets/events.jpg"
+      alt="Students engaged in a classroom, one raising a hand"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0B1B2E]/90 via-[#0B1B2E]/65 to-[#0B1B2E]/25"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0B1B2E]/75 via-transparent to-transparent"></div>
+ 
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 py-20 sm:py-24 lg:py-28">
+      <div class="max-w-3xl">
+        <p class="text-amber text-xs font-semibold tracking-[0.2em] uppercase mb-5 flex items-center gap-2">
+          <span class="rounded-xs block w-[26px] h-[1px] bg-amber"></span>
+          Events & Initiatives
+        </p>
+        <h2 class="font-display font-medium text-3xl sm:text-4xl md:text-5xl lg:text-[75px] leading-[1.15] text-white mb-6">
+         Where learning  <br>
+         meets actions
+        </h2>
+        <p class="text-white/70 text-sm sm:text-base  relative leading-relaxed max-w-xl mb-8">
+         Explore community-led experiences that help students learn beyond textbooks and participate in creating a cleaner, greener, and more responsible future.
+        </p>
+        <div class="flex flex-col flex-wrap relative lg:absolute lg:left-auto lg:right-0 lg:top-1/2 lg:-translate-y-1/2 mt-8 lg:mt-0 gap-4 p-2 font-light border-l border-[#6f7b8b]">
+          <h3 class="text-white">Ideas become impact</h3>
+          <p class="text-[#6f7b8b]">Every event is designed to create awareness,<br> conversation, and practical action.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+        
+      
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 ">
+ 
+  <!-- Eyebrow -->
+  <div class="flex items-center gap-3 mb-4">
+    <span class="w-6 h-[2px] bg-amber"></span>
+    <span class="text-xs font-bold tracking-[0.15em] text-amber uppercase">Latest Articles</span>
+  </div>
+ 
+  <!-- Heading row -->
+  <div class="flex flex-col md:flex-row md:items-start justify-between gap-8 mb-10">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-navy leading-[1.1] tracking-tight max-w-2xl">
+      Perspectives on education, care, and opportunity.
+    </h2>
+    <p class="text-sm text-gray-500 leading-relaxed max-w-xs pt-2">
+      Browse the journal by category or search for a topic. The archive automatically paginates as new articles are added.
+    </p>
+  </div>
+ 
+  <!-- Filters row -->
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-gray-100">
+    <div id="filter-pills" class="flex flex-wrap gap-2">
+      <button data-filter="all" class="filter-pill px-4 py-2 rounded-full text-sm font-semibold bg-navy text-white transition-colors">All Articles</button>
+      <button data-filter="mera-sankalp" class="filter-pill px-4 py-2 rounded-full text-sm font-medium bg-white border border-gray-200 text-gray-600 hover:border-gray-300 transition-colors">Mera Sankalp</button>
+      <button data-filter="volunteer" class="filter-pill px-4 py-2 rounded-full text-sm font-medium bg-white border border-gray-200 text-gray-600 hover:border-gray-300 transition-colors">Volunteer</button>
+      <button data-filter="student-wellbeing" class="filter-pill px-4 py-2 rounded-full text-sm font-medium bg-white border border-gray-200 text-gray-600 hover:border-gray-300 transition-colors">Student Wellbeing</button>
+    </div>
+    <div class="relative w-full sm:w-64">
+      <input id="article-search" type="text" placeholder="Search articles"
+        class="w-full rounded-lg border border-gray-200 text-sm text-gray-600 placeholder-gray-400 pl-4 pr-9 py-2.5 outline-none focus:border-gray-300" />
+      <svg class="w-4 h-4 text-gray-400 absolute right-3 top-1/2 -translate-y-1/2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="7"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </div>
+  </div>
+ 
+  <!-- Cards grid -->
+  <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+ 
+    <!-- Card 1 -->
+    <article class="article-card group" data-category="mera-sankalp" data-title="Mera Sankalp: Education That Cares For The Mind And The Future" data-excerpt="Why education must support academic growth, emotional confidence, and a student's long-term sense of possibility.">
+      <div class="relative rounded-xl overflow-hidden aspect-[4/3] bg-gray-200">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=450&fit=crop" alt="" class="w-full h-full object-cover">
+        <span class="absolute bottom-3 left-3 bg-badgenavy text-white text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded">Mera Sankalp</span>
+      </div>
+      <div class="pt-5">
+        <p class="text-xs font-bold text-amber uppercase tracking-wide mb-2">01 &middot; Featured Story</p>
+        <h3 class="text-lg font-bold text-navy leading-snug mb-3">Mera Sankalp: Education That Cares For The Mind And The Future</h3>
+        <div class="flex items-center gap-2 text-xs text-gray-400 mb-3">
+          <span>Dec 30, 2025</span><span>&middot;</span><span>Givewise@2025</span><span>&middot;</span><span>0 Comments</span>
+        </div>
+        <p class="text-sm text-gray-500 leading-relaxed mb-4">Why education must support academic growth, emotional confidence, and a student's long-term sense of possibility.</p>
+        <a href="#" class="inline-flex items-center gap-1 text-sm font-semibold text-navy hover:gap-2 transition-all">Read Article <span>&rarr;</span></a>
+      </div>
+    </article>
+ 
+    <!-- Card 2 -->
+    <article class="article-card group" data-category="mera-sankalp volunteer" data-title="Volunteers Who Teach, Listen, And Change Students' Lives" data-excerpt="Teaching is only one part of volunteering. Listening, encouraging, and consistently showing up can transform a learner's confidence.">
+      <div class="relative rounded-xl overflow-hidden aspect-[4/3] bg-gray-200">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=450&fit=crop" alt="" class="w-full h-full object-cover">
+        <span class="absolute bottom-3 left-3 bg-badgenavy text-white text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded">Mera Sankalp &middot; Volunteer</span>
+      </div>
+      <div class="pt-5">
+        <p class="text-xs font-bold text-amber uppercase tracking-wide mb-2">02 &middot; Volunteer Story</p>
+        <h3 class="text-lg font-bold text-navy leading-snug mb-3">Volunteers Who Teach, Listen, And Change Students' Lives</h3>
+        <div class="flex items-center gap-2 text-xs text-gray-400 mb-3">
+          <span>Dec 29, 2025</span><span>&middot;</span><span>Givewise@2025</span><span>&middot;</span><span>0 Comments</span>
+        </div>
+        <p class="text-sm text-gray-500 leading-relaxed mb-4">Teaching is only one part of volunteering. Listening, encouraging, and consistently showing up can transform a learner's confidence.</p>
+        <a href="#" class="inline-flex items-center gap-1 text-sm font-semibold text-navy hover:gap-2 transition-all">Read Article <span>&rarr;</span></a>
+      </div>
+    </article>
+ 
+    <!-- Card 3 -->
+    <article class="article-card group" data-category="mera-sankalp student-wellbeing" data-title="Mental Health And Exam Pressure: The Silent Struggle Of Students" data-excerpt="Academic pressure can become an invisible burden. Students need reassurance, realistic expectations, and safe spaces to ask for help.">
+      <div class="relative rounded-xl overflow-hidden aspect-[4/3] bg-gray-200">
+        <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=600&h=450&fit=crop" alt="" class="w-full h-full object-cover">
+        <span class="absolute bottom-3 left-3 bg-badgenavy text-white text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded">Mera Sankalp</span>
+      </div>
+      <div class="pt-5">
+        <p class="text-xs font-bold text-amber uppercase tracking-wide mb-2">03 &middot; Student Wellbeing</p>
+        <h3 class="text-lg font-bold text-navy leading-snug mb-3">Mental Health And Exam Pressure: The Silent Struggle Of Students</h3>
+        <div class="flex items-center gap-2 text-xs text-gray-400 mb-3">
+          <span>Dec 29, 2025</span><span>&middot;</span><span>Givewise@2025</span><span>&middot;</span><span>0 Comments</span>
+        </div>
+        <p class="text-sm text-gray-500 leading-relaxed mb-4">Academic pressure can become an invisible burden. Students need reassurance, realistic expectations, and safe spaces to ask for help.</p>
+        <a href="#" class="inline-flex items-center gap-1 text-sm font-semibold text-navy hover:gap-2 transition-all">Read Article <span>&rarr;</span></a>
+      </div>
+    </article>
+ 
+  </div>
+
+  <!-- No results message -->
+  <p id="no-results" class="hidden text-sm text-gray-400 text-center py-16">No articles match your search or filter.</p>
+ 
+  <!-- Footer row -->
+  <div class="flex flex-col sm:flex-row justify-between items-center gap-2 mt-14 text-xs text-gray-400">
+    <span id="showing-count">Showing 1&ndash;3 of 3 articles</span>
+    <span>6 articles per page on desktop</span>
+  </div>
+ 
+  <!-- Pagination -->
+  <div id="pagination" class="flex items-center justify-center gap-2 mt-6">
+    <button id="prev-page" class="w-9 h-9 rounded-lg flex items-center justify-center bg-gray-50 text-gray-400 hover:bg-gray-100 disabled:opacity-40 disabled:cursor-not-allowed" disabled>&larr;</button>
+    <div id="page-numbers" class="flex items-center gap-2"></div>
+    <button id="next-page" class="w-9 h-9 rounded-lg flex items-center justify-center bg-gray-50 text-gray-400 hover:bg-gray-100 disabled:opacity-40 disabled:cursor-not-allowed" disabled>&rarr;</button>
+  </div>
+  <div> 
+    <div class="mt-40">
+      <h2 class="text-black text-[2rem] font-bold">Education works best when students feel supported, not judged.</h2>
+      <p class="font-light text-[#172333]">Knowledge matters, but confidence, emotional safety, mentorship, and belonging determine whether a student can use that knowledge fully.</p>
+      <h4 class="text-[#172333] font-bold">Whole-child learning Academic progress supported by care and guidance.</h4>
+    </div>
+  </div>
+</section>
+
+<!--===============stay-connectecd==================-->
+ <section class="bg-[#e3e8ee] py-10 px-4 sm:px-6 lg:px-20">
+  <div
+    class="max-w-[1178px] mx-auto bg-white rounded-2xl lg:rounded-3xl
+    p-6 sm:p-8 lg:p-14
+    flex flex-col lg:flex-row
+    items-center justify-between
+    gap-10 lg:gap-20">
+
+    <!-- Left Content -->
+    <div class="w-full max-w-[513px] text-center lg:text-left">
+
+      <div class="flex items-center justify-center lg:justify-start gap-3 mb-4">
+        <span class="w-7 h-[2px] bg-[#C79A51]"></span>
+        <span class="text-[12px] sm:text-[13px] font-semibold tracking-[1.5px] uppercase text-[#C79A51]">
+          Newsletter
+        </span>
+      </div>
+
+      <h2
+        class="font-display
+        text-[30px]
+        sm:text-[38px]
+        lg:text-[48px]
+        leading-tight
+        font-semibold
+        text-[#0A223A]
+        mb-5">
+        Stay Connected
+      </h2>
+
+      <p
+        class="text-[14px]
+        sm:text-[15px]
+        leading-7
+        text-[#7B8794]
+        mb-7
+        max-w-full
+        lg:max-w-[420px]
+        mx-auto
+        lg:mx-0">
+        Subscribe to receive updates about campaigns, success stories, and upcoming events.
+      </p>
+
+      <!-- Form -->
+      <form
+        class="flex flex-col sm:flex-row w-full gap-3 sm:gap-0"
+        onsubmit="return false;">
+
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          class="h-12 flex-1 px-5 border border-[#E5E7EB]
+          rounded-lg sm:rounded-l-lg sm:rounded-r-none
+          outline-none
+          text-sm
+          placeholder:text-[#9CA3AF]
+          focus:border-[#153656]" />
+
+        <button
+          class="h-12
+          px-7
+          rounded-lg
+          sm:rounded-l-none
+          sm:rounded-r-lg
+          bg-[#153656]
+          text-white
+          font-medium
+          text-sm
+          hover:opacity-90">
+          Subscribe
+        </button>
+
+      </form>
+
+    </div>
+
+    <!-- Illustration -->
+    <div class="flex-shrink-0 w-full max-w-[452px] aspect-[452/278] rounded-[24px] bg-[#FCF8F1] overflow-hidden">
+<svg viewBox="0 0 452 278" class="w-full h-full">
+
+  <defs>
+    <!-- Book Shadow -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#000000" flood-opacity=".18"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="452" height="278" rx="24" fill="#FCF8F1"/>
+
+  <!-- Yellow Circle -->
+  <circle
+      cx="292"
+      cy="135"
+      r="92"
+      fill="#F3D38C"/>
+
+  <!-- Body -->
+  <path
+      d="M194 133
+         C198 108 214 95 226 95
+         C238 95 254 108 258 133
+         Z"
+      fill="#D89A2F"/>
+
+  <!-- Head -->
+  <circle
+      cx="226"
+      cy="87"
+      r="20"
+      fill="#C88957"/>
+
+  <!-- Book -->
+  <g filter="url(#shadow)">
+
+    <!-- Bottom Blue -->
+    <path
+      d="
+      M152 199
+      Q190 204 226 210
+      Q262 204 300 199
+      Q306 199 306 189
+      L306 174
+      L146 174
+      L146 189
+      Q146 199 152 199
+      Z"
+      fill="#17375C"/>
+
+    <!-- Left Page -->
+    <path
+      d="
+      M146 112
+      Q185 107 226 112
+      L226 188
+      Q186 181 146 186
+      Q138 186 138 176
+      L138 124
+      Q138 114 146 112
+      Z"
+      fill="#FFFFFF"/>
+
+    <!-- Right Page -->
+    <path
+      d="
+      M306 112
+      Q267 107 226 112
+      L226 188
+      Q266 181 306 186
+      Q314 186 314 176
+      L314 124
+      Q314 114 306 112
+      Z"
+      fill="#FFFFFF"/>
+
+    <!-- Center Fold -->
+    <line
+        x1="226"
+        y1="112"
+        x2="226"
+        y2="188"
+        stroke="#ECECEC"
+        stroke-width="2"/>
+
+  </g>
+
+</svg>
+</div>
+
+  </div>
+</section>
+
+   <!-- ================= FOOTER ================= -->
+    <footer id="contact" class="bg-[#102a4b] pt-16 lg:pt-20 pb-8">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 pb-12 lg:pb-14 border-b border-white/10"
+        >
+          <div class="sm:col-span-2 lg:col-span-2">
+            <div class="flex items-center gap-2 mb-4">
+              <a href="#" class="flex items-center gap-2 shrink-0">
+                <div id="logo" class="w-28 h-12">
+                  <img src="/src/assets/Frame2.png" alt="logo" class="w-full h-full object-contain" />
+                </div>
+              </a>
+            </div>
+            <p class="text-white/50 text-sm leading-relaxed max-w-xs">
+              GiveWise Education Foundation supports students with quality
+              education, mentorship, digital skills, scholarships, and a fair
+              start in life.
+            </p>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-white font-display font-semibold text-sm mb-5">
+              Quick Links
+            </h4>
+            <ul class="space-y-3 text-sm text-white/50">
+              <li>
+                <a href="/src/Pages/index.html" class="hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="/src/Pages/campaigns.html" class="hover:text-white transition-colors"
+                  >Campaigns</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="/src/Pages/blog.html" class="hover:text-white transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-white transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-white font-display font-semibold text-sm mb-5">
+              Programs
+            </h4>
+            <ul class="space-y-3 text-sm text-white/50">
+              <li>
+                <a href="#programs" class="hover:text-white transition-colors"
+                  >Digital Pathshala</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >For Students</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Mera Sankalp</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Volunteer Program</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-white font-display font-semibold text-sm mb-5">
+              Contact
+            </h4>
+            <ul class="space-y-3 text-sm text-white/50">
+              <li>
+                <a href="#home" class="hover:text-white transition-colors"
+                  >Hello@givwise.org</a
+                >
+              </li>
+              <li>
+                <a href="#programs" class="hover:text-white transition-colors"
+                  >+1 234567890</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-white transition-colors"
+                  >New Delhi, India</a
+                >
+              </li>
+              <li>
+                <a href="/src/Pages/blog.html" class="hover:text-white transition-colors"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full sm:col-span-2 md:col-span-1">
+            <h4 class="text-white font-display font-semibold text-sm mb-5 w-40">
+              Stay Connected
+            </h4>
+            <p class="text-white/50 text-sm mb-4">
+              Get updates on stories, students, and campaigns.
+            </p>
+             <form id="newsletter-form" class="flex w-full">
+              <input
+                type="email"
+                required
+                placeholder="Your email"
+                class="flex-1 w-200 rounded-bl-[10px] rounded-tl-[10px] bg-white/10 border border-white/15 text-white text-sm placeholder-white/40 px-4 py-2.5 outline-none"
+              />
+              <button
+                type="submit"
+                class="shrink-0 rounded-br-[10px] rounded-tr-[10px] font-bold bg-amber text-ink text-sm  px-4 hover:bg-amberdark transition-colors"
+              >
+                →
+              </button>
+            </form>
+            <p id="newsletter-msg" class="text-amber text-xs mt-3 hidden">
+              Thanks for subscribing!
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"
+        >
+          <p class="text-white/40 text-xs text-center sm:text-left">
+            © <span id="year"></span> GiveWise Education Foundation. All rights
+            reserved.
+          </p>
+          <div class="flex gap-6 text-white/40 text-xs">
+            <a href="#" class="hover:text-white transition-colors"
+              >facebook</a
+            >
+            <a href="#" class="hover:text-white transition-colors"
+              >Instagram</a
+            >
+             <a href="#" class="hover:text-white transition-colors"
+              >LinkdIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="/src/JS/index.js"></script>
+</body>
+</html>
