@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme{
+  /* Colors */
+  --color-ink: #0B0E13;
+  --color-navy: #152541;
+  --color-navydeep: #122040;
+  --color-amber: #F2A93B;
+  --color-amberdark: #D9901F;
+  --color-cream: #FAF6EF;
+  --color-stone: #6B7280;
+
+  /* Fonts */
+  --font-display: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+}

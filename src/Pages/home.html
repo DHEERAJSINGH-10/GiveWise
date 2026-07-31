@@ -1,0 +1,1193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GiveWise Education Foundation</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <link rel="stylesheet" href="../Styles/global.css" />
+  </head>
+
+  <body class="font-body text-ink bg-white antialiased">
+    <!-- ================= HEADER ================= -->
+    <header
+      id="site-header"
+      class="fixed top-0 inset-x-0 z-50 bg-white border-b border-black/5 transition-shadow"
+    >
+      <div
+        class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 flex items-center justify-between h-20"
+      >
+        <a href="#" class="flex items-center gap-2 shrink-0">
+          <div id="logo" class="w-28 sm:w-33 h-12 sm:h-15">
+            <img src="/src/assets/Frame1.png" alt="logo" class="w-full h-full object-contain" />
+          </div>
+        </a>
+
+        <nav
+          class="hidden lg:flex items-center gap-9 text-sm text-ink/70 font-medium"
+        >
+          <a href="#home" class="hover:text-ink transition-colors">Home</a>
+          <a href="/src/Pages/campaigns.html" class="hover:text-ink transition-colors"
+            >Campaigns</a
+          >
+          <a href="/src/Pages/event.html" class="hover:text-ink transition-colors">Events</a>
+          <a href="#about" class="hover:text-ink transition-colors">About Us</a>
+          <a href="/src/Pages/blog.html" class="hover:text-ink transition-colors">Blog</a>
+          <a href="#contact" class="hover:text-ink transition-colors"
+            >Contact Us</a
+          >
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-6">
+          <a
+            href="#donate"
+            class="inline-flex items-center rounded-full bg-[#183a67] text-white text-sm font-semibold px-6 py-2.5 hover:bg-amberdark transition-colors"
+            >Donate Now</a
+          >
+        </div>
+
+        <button
+          id="menu-btn"
+          aria-label="Toggle menu"
+          class="lg:hidden text-ink p-2"
+        >
+          <svg
+            id="icon-open"
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+          </svg>
+          <svg
+            id="icon-close"
+            class="hidden"
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="lg:hidden hidden border-t border-black/5 bg-white px-5 sm:px-6 py-6 space-y-5"
+      >
+        <a href="#home" class="block text-ink/80 font-medium">Home</a>
+        <a href="/src/Pages/campaigns.html" class="block text-ink/80 font-medium">Campaigns</a>
+        <a href="/src/Pages/event.html" class="block text-ink/80 font-medium">Events</a>
+        <a href="#about" class="block text-ink/80 font-medium">About Us</a>
+        <a href="/src/Pages/blog.html" class="block text-ink/80 font-medium">Blog</a>
+        <a href="#contact" class="block text-ink/80 font-medium">Contact Us</a>
+        <a
+          href="#donate"
+          class="inline-flex items-center rounded-full bg-amber text-ink text-sm font-semibold px-6 py-2.5"
+          >Donate Now</a
+        >
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="relative pt-20">
+      <div class="relative min-h-[600px] sm:min-h-[700px] lg:min-h-[760px] flex items-center">
+        <img
+          id="hero-img"
+          src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600&auto=format&fit=crop"
+          alt="Students learning in a classroom"
+          class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
+        />
+        <div
+          class="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,27,48,0.88)_0%,rgba(8,27,48,0.70)_43%,rgba(8,27,48,0.20)_76%,rgba(8,27,48,0.08)_100%),linear-gradient(0deg,rgba(8,27,48,0.38)_0%,rgba(8,27,48,0)_48%)]"
+        ></div>
+
+        <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 w-full py-14 sm:py-20">
+          <p
+            class="flex items-center gap-[10px] reveal text-amber text-xs font-medium tracking-[0.2em] uppercase mb-5"
+          >
+            <span class="rounded-xs block w-[40px] h-[1px] bg-amber"></span
+            >Education Created Possibility
+          </p>
+          <h1
+            class="reveal font-display font-[400] text-white text-3xl sm:text-5xl lg:text-[76px] leading-[1.1] lg:leading-[1.08] max-w-xl"
+          >
+            Every dream deserves a <span class="text-amber">fair</span>
+            <span class="text-amber"> beginning.</span>
+          </h1>
+          <p
+            class="reveal font-light mt-6 max-w-[600px] text-white/70 text-sm sm:text-base leading-relaxed"
+          >
+            GiveWise Education Foundation helps deserving students access
+            education, mentorship, emotional support, and opportunities that
+            build confidence for life.
+          </p>
+
+          <div class="reveal mt-8 sm:mt-9 flex flex-wrap items-center gap-3 sm:gap-4">
+            <a
+              href="#donate"
+              class="inline-flex items-center rounded-full bg-amber text-ink text-sm font-semibold px-6 sm:px-7 py-3 sm:py-3.5 hover:bg-amberdark transition-colors"
+              >Support A Student</a
+            >
+            <a
+              href="#about"
+              class="inline-flex items-center rounded-full border border-white/30 text-white text-sm font-semibold px-6 sm:px-7 py-3 sm:py-3.5 hover:bg-white/10 transition-colors"
+              >Discover Our Work</a
+            >
+          </div>
+
+          <div class="reveal mt-10 w-full max-w-[620px] pt-8 border-t border-white/20 grid grid-cols-3 gap-4 sm:gap-6">
+            <div class="border-r border-white/20 pr-3 sm:pr-6">
+              <p class="font-display font-medium text-xl sm:text-3xl text-white">12000+</p>
+              <p class="text-white/60 text-[10px] sm:text-xs mt-1">Students Educated</p>
+            </div>
+            <div class="border-r border-white/20 pr-3 sm:pr-6">
+              <p class="font-display font-medium text-xl sm:text-3xl text-white">300+</p>
+              <p class="text-white/60 text-[10px] sm:text-xs mt-1">Volunteers &amp; Mentors</p>
+            </div>
+            <div class="pl-1 sm:pl-2">
+              <p class="font-display font-medium text-xl sm:text-3xl text-white">28</p>
+              <p class="text-white/60 text-[10px] sm:text-xs mt-1">Years of Impact</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hidden xl:flex flex-col absolute top-1/2 right-8 2xl:right-20 gap-3 border-l border-white/15 px-5 py-4 max-w-xs"
+        >
+          <h3 class="text-white">Learning with dignity</h3>
+          <p class="text-white/85 text-xs font-light leading-snug w-40">
+            We support the student as a whole academically, emotionally, and
+            socially.
+          </p>
+        </div>
+
+        <div class="hidden md:flex absolute bottom-6 right-5 lg:right-10 xl:right-20 items-center gap-5">
+          <!-- Slide progress bars -->
+          <div id="hero-progress" class="hidden sm:flex items-center gap-2">
+            <span
+              class="h-[3px] w-10 rounded-full bg-amber transition-colors duration-300"
+              data-index="0"
+            ></span>
+            <span
+              class="h-[3px] w-10 rounded-full bg-white/25 transition-colors duration-300"
+              data-index="1"
+            ></span>
+            <span
+              class="h-[3px] w-10 rounded-full bg-white/25 transition-colors duration-300"
+              data-index="2"
+            ></span>
+          </div>
+          <button
+            id="hero-prev"
+            aria-label="Previous slide"
+            class="w-11 h-11 rounded-full border pr-3 border-white/25 text-white flex items-center justify-center hover:bg-white/10 transition-colors"
+          >
+            <svg
+              fill="#fff"
+              viewBox="0 0 24 24"
+              id="left-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon line"
+              stroke="#fff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  id="primary"
+                  d="M21,12H12M15,9,12,12l3,3"
+                  style="
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 1;
+                  "
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <button
+            id="hero-next"
+            aria-label="Next slide"
+            class="w-11 h-11 rounded-full bg-none pl-3 border border-white/25 flex items-center justify-center hover:bg-white/10 transition-colors"
+          >
+            <svg
+              fill="#fff"
+              viewBox="0 0 24 24"
+              id="right-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon line"
+              stroke="#fff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  id="primary"
+                  d="M3,12H12M9,9l3,3-3,3"
+                  style="
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 1;
+                  "
+                ></path>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature strip -->
+    <div class="bg-white border-t border-white/5 mt-10">
+      <div
+        class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+      >
+        <div
+          class="reveal flex flex-col items-start w-full gap-4 sm:border-r border-[#DDE2E8] sm:pr-6 lg:pr-10"
+        >
+          <span
+            class="w-10 h-10 rounded-full border-none text-[1rem] font-bold flex items-center justify-center text-[#183A67] bg-[#EDF3F9] shrink-0"
+          >
+            01
+          </span>
+          <div class="text-black/70 text-sm leading-relaxed">
+            <h3 class="text-[1rem] text-[#102a4b] font-[800]">Certified NGO</h3>
+            <p>Structured programs led with responsibility and care.</p>
+          </div>
+        </div>
+        <div
+          class="reveal flex flex-col items-start w-full gap-4 sm:border-r border-[#DDE2E8] sm:pr-6 lg:pr-10"
+        >
+          <span
+            class="w-10 h-10 rounded-full border-none text-[1rem] font-bold flex items-center justify-center text-[#183A67] bg-[#EDF3F9] shrink-0"
+          >
+            02
+          </span>
+          <div class="text-black/70 text-sm leading-relaxed">
+            <h3 class="text-[1rem] text-[#102a4b] font-[800]">Certified NGO</h3>
+            <p>Structured programs led with responsibility and care.</p>
+          </div>
+        </div>
+        <div
+          class="reveal flex flex-col items-start w-full gap-4 sm:border-r border-[#DDE2E8] sm:pr-6 lg:pr-10"
+        >
+          <span
+            class="w-10 h-10 rounded-full text-[1rem] font-bold border-none flex items-center justify-center text-[#183A67] bg-[#EDF3F9] shrink-0"
+          >
+            03
+          </span>
+          <div class="text-black/70 text-sm leading-relaxed">
+            <h3 class="text-[1rem] text-[#102a4b] font-[800]">Certified NGO</h3>
+            <p>Clear direction of support across every educational initiative.</p>
+          </div>
+        </div>
+        <div
+          class="reveal flex flex-col items-start w-full gap-4"
+        >
+          <span
+            class="w-10 h-10 rounded-full text-[1rem] font-bold border-none flex items-center justify-center text-[#183A67] bg-[#EDF3F9] shrink-0"
+          >
+            04
+          </span>
+          <div class="text-black/70 text-sm leading-relaxed">
+            <h3 class="text-[1rem] text-[#102a4b] font-[800]">Certified NGO</h3>
+            <p>Structured programs led with responsibility and care.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= CHOOSE HOW TO CONTRIBUTE ================= -->
+    <section class="bg-white py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+        <div class="w-full mb-10 lg:mb-14">
+          <p
+            class="reveal text-amberdark text-xs font-semibold tracking-[0.2em] uppercase flex items-center gap-1"
+          > <span class="rounded-xs block w-[40px] h-[1px] bg-amber"></span
+            >
+            Make A Difference
+          </p>
+          <div class="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8 mt-6">
+            <h2
+              class="reveal font-display font-medium text-[#102a4b] text-2xl sm:text-3xl lg:text-4xl leading-tight w-full lg:max-w-[480px]"
+            >
+              Choose how you would like to contribute.
+            </h2>
+            <p class="text-stone text-sm sm:text-base w-full lg:max-w-[620px] mt-0 leading-relaxed">
+              Progress becomes possible when students, donors, and communities
+              come together around one shared purpose.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <div class="reveal group rounded-2xl border border-[#DDE2E8] p-6 sm:p-8 transition-[transform,background-color,box-shadow] duration-300 ease-out hover:shadow-xl hover:-translate-y-1 hover:bg-[#183a67]">
+            <p class="text-xs font-semibold tracking-[0.15em] uppercase text-stone mb-6 transition-colors duration-300 group-hover:text-white/70">
+              For Students
+            </p>
+            <h3 class="font-display font-semibold text-xl mb-3 text-black transition-colors duration-300 group-hover:text-white">
+              Join as a Student
+            </h3>
+            <p class="text-stone text-sm leading-relaxed mb-8 transition-colors duration-300 group-hover:text-white">
+              Access mentorship, career guidance, and resources designed to help you move forward with confidence.
+            </p>
+            <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-ink transition-colors duration-300 group-hover:text-amber">
+              Apply Now <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="reveal group rounded-2xl border border-[#DDE2E8] p-6 sm:p-8 transition-[transform,background-color,box-shadow] duration-300 ease-out hover:shadow-xl hover:-translate-y-1 hover:bg-[#183a67]">
+            <p class="text-xs font-semibold tracking-[0.15em] uppercase text-stone mb-6 transition-colors duration-300 group-hover:text-white/70">
+              For Donors
+            </p>
+            <h3 class="font-display font-semibold text-xl mb-3 text-black transition-colors duration-300 group-hover:text-white">
+              Donate to Support
+            </h3>
+            <p class="text-stone text-sm leading-relaxed mb-8 transition-colors duration-300 group-hover:text-white">
+              Every contribution helps provide books, scholarships, learning
+              resources, and long-term student support.
+            </p>
+            <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-ink transition-colors duration-300 group-hover:text-amber">
+              Donate Now <span aria-hidden="true">→</span></a
+            >
+          </div>
+
+          <div class="reveal group rounded-2xl border border-[#DDE2E8] p-6 sm:p-8 transition-[transform,background-color,box-shadow] duration-300 ease-out hover:shadow-xl hover:-translate-y-1 hover:bg-[#183a67]">
+            <p class="text-xs font-semibold tracking-[0.15em] uppercase text-stone mb-6 transition-colors duration-300 group-hover:text-white/70">
+              For Mentors
+            </p>
+            <h3 class="font-display font-semibold text-xl mb-3 text-black transition-colors duration-300 group-hover:text-white">
+              Volunteer or Mentor
+            </h3>
+            <p class="text-stone text-sm leading-relaxed mb-8 transition-colors duration-300 group-hover:text-white">
+              Share your time and experience through mentorship, career
+              guidance, and skill development sessions.
+            </p>
+            <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-ink transition-colors duration-300 group-hover:text-amber">
+              Join as Volunteer <span aria-hidden="true">→</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT US ================= -->
+    <section id="about" class="bg-[#F7F8FA] py-16 lg:py-24">
+
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
+        <div class="relative w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[560px]">
+          <img
+            src="/src/assets/bc891dde47639b0d401cd86864b9f34b4549b3e0.jpg"
+            alt="Student studying"
+            class="rounded-3xl w-full h-full object-cover rounded-tr-[60px] sm:rounded-tr-[80px] rounded-br-[60px] sm:rounded-br-[80px]"
+          />
+       <div
+  class="hidden sm:block absolute  right-4 lg:-right-8 bottom-4 bg-amber rounded-2xl px-6 sm:px-9 py-4 sm:py-5 shadow-lg max-w-[140px] sm:max-w-[160px]"
+>
+  <p class="font-display font-bold text-2xl sm:text-3xl text-ink">28</p>
+  <p class="text-ink/80 text-xs mt-1 leading-snug">
+    Years of meaningful educational impact
+  </p>
+</div>
+        </div>
+
+        <div class="w-full">
+          <p
+            class="reveal text-amberdark text-xs font-semibold tracking-[0.2em] uppercase mb-4 flex items-center gap-1"
+          ><span class="rounded-xs block w-[40px] h-[1px] bg-amber"></span
+            >
+            About Us
+          </p>
+          <h2
+            class="reveal w-full max-w-xl font-display font-[400] text-[#102a4b] text-2xl sm:text-3xl lg:text-[3.5rem] leading-tight mb-5"
+          >
+            Empowering dreams through free<br class="hidden sm:block"> education.
+          </h2>
+          <p class="reveal text-stone text-sm sm:text-base leading-relaxed mb-9">
+            GiveWise Education Foundation provides quality education,
+            mentorship, and emotional support to deserving students. We believe
+            education is what turns opportunity into confidence, and confidence
+            into transformation.
+          </p>
+
+          <div class="reveal grid grid-cols-1 sm:grid-cols-2 gap-4 mb-9">
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-3 p-4 w-full bg-white rounded-md border border-[#DDE2E8]">
+                <span
+                  class="w-9 h-9 rounded-full bg-[#EDF3F9] flex items-center justify-center text-[#102a4b] shrink-0"
+                  ><svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M20 6L9 17l-5-5" /></svg
+                ></span>
+                <span class="text-sm font-medium text-[#102a4b]">Free Mentorship</span>
+              </div>
+              <div class="flex items-center gap-3 p-4 w-full bg-white rounded-md border border-[#DDE2E8]">
+                <span
+                  class="w-9 h-9 rounded-full bg-[#EDF3F9] flex items-center justify-center text-[#102a4b] shrink-0"
+                  ><svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M20 6L9 17l-5-5" /></svg
+                ></span>
+                <span class="text-sm font-medium text-[#102a4b]">Scholarship Programs</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-3 p-4 w-full bg-white rounded-md border border-[#DDE2E8]">
+                <span
+                  class="w-9 h-9 rounded-full bg-[#EDF3F9] flex items-center justify-center text-[#102a4b] font-medium shrink-0"
+                  ><svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M20 6L9 17l-5-5" /></svg
+                ></span>
+                <span class="text-sm font-medium text-[#102a4b]">Workshops</span>
+              </div>
+              <div class="flex items-center gap-3 p-4 w-full bg-white rounded-md border border-[#DDE2E8]">
+                <span
+                  class="w-9 h-9 rounded-full bg-[#EDF3F9] flex items-center justify-center text-[#102a4b] shrink-0"
+                  ><svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M20 6L9 17l-5-5" /></svg
+                ></span>
+                <span class="text-sm font-medium text-[#102a4b]">Skill Access</span>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="reveal inline-flex items-center rounded-full bg-[#102a4b] text-white text-sm font-semibold px-6 sm:px-7 py-3 sm:py-3.5 hover:bg-navy transition-colors"
+            >Learn More About Us</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= IMPACT ================= -->
+    <section class="bg-navydeep py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-10 items-end mb-12 lg:mb-16">
+          <div>
+            <p
+              class="reveal text-amber text-xs font-semibold tracking-[0.2em] uppercase mb-4 flex items-center gap-1"
+            >
+             <span class="rounded-xs block w-[40px] h-[1px] bg-amber"></span
+            > Our Impact
+            </p>
+            <h2
+              class="reveal font-display font-[400] text-2xl sm:text-3xl lg:text-[3rem] leading-tight text-white"
+            >
+              Real progress, measured through people.
+            </h2>
+          </div>
+          <p class="reveal text-white text-sm sm:text-base leading-relaxed">
+            Every number represents a student supported, a volunteer involved,
+            or a learning opportunity made possible.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-2 sm:grid-cols-5 gap-6 sm:gap-8 border-t border-white/10 pt-10 sm:pt-12"
+        >
+          <div class="reveal text-center sm:text-left">
+            <p
+              class="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-amber counter"
+              data-target="12000"
+              data-suffix="+"
+            >
+              0
+            </p>
+            <p class="text-white/60 text-xs mt-2">Students Supported</p>
+          </div>
+          <div class="reveal text-center sm:text-left">
+            <p
+              class="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-amber counter"
+              data-target="850"
+              data-suffix="+"
+            >
+              0
+            </p>
+            <p class="text-white/60 text-xs mt-2">Scholarships</p>
+          </div>
+          <div class="reveal text-center sm:text-left">
+            <p
+              class="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-amber counter"
+              data-target="300"
+              data-suffix="+"
+            >
+              0
+            </p>
+            <p class="text-white/60 text-xs mt-2">Volunteers</p>
+          </div>
+          <div class="reveal text-center sm:text-left">
+            <p
+              class="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-amber counter"
+              data-target="42"
+            >
+              0
+            </p>
+            <p class="text-white/60 text-xs mt-2">Campaigns</p>
+          </div>
+          <div class="reveal text-center sm:text-left col-span-2 sm:col-span-1">
+            <p
+              class="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-amber counter"
+              data-target="28"
+            >
+              0
+            </p>
+            <p class="text-white/60 text-xs mt-2">Years of Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROGRAMS ================= -->
+    <section id="programs" class="bg-white py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+        <div class="max-w-2xl mb-10 lg:mb-16">
+          <p
+             class="reveal text-amber text-xs font-semibold tracking-[0.2em] uppercase mb-4 flex items-center gap-1"
+          >
+            <span class="rounded-xs block w-[40px] h-[1px] bg-amber"></span
+            > Our Programs
+          </p>
+          <h2
+            class="reveal font-display font-[600] text-2xl sm:text-3xl lg:text-4xl leading-tight text-[#102a4b]"
+          >
+            Education for every dream.
+          </h2>
+          <p class="reveal mt-5 text-sm sm:text-base text-[#667085] leading-relaxed">
+            Our programs combine support, digital learning, mentorship,
+            emotional wellbeing, and real-world opportunity.
+          </p>
+        </div>
+
+        <div class="space-y-6 lg:space-y-8">
+          <!-- campaign 1 -->
+          <div
+            class="reveal grid md:grid-cols-2 rounded-3xl overflow-hidden bg-white/[0.03] border border-[#DDE2E8]"
+          >
+            <img
+              src="/src/assets/book.png"
+              alt="Stack of books"
+              class="w-full h-56 sm:h-72 md:h-full object-cover"
+            />
+            <div class="p-6 sm:p-8 md:p-10 flex flex-col justify-center">
+              <p
+                class="text-xs font-semibold tracking-[0.15em] uppercase text-amber mb-4"
+              >
+                Campaign 01
+              </p>
+              <h3 class="font-display font-semibold text-xl sm:text-2xl text-[#102a4b] mb-3">
+                Every Child Deserves Education
+              </h3>
+              <p class="text-[#667085] text-sm leading-relaxed mb-6">
+                A long-term support initiative helping students access essential
+                learning materials, scholarships, academic guidance, and a
+                stable pathway to continue their education.
+              </p>
+              <ul class="space-y-2 mb-8">
+                <li class="flex items-center gap-3 text-[#102a4b] text-sm">
+                  <span class="text-amber">✓</span> Learning kits and books
+                </li>
+                <li class="flex items-center gap-3 text-[#102a4b] text-sm">
+                  <span class="text-amber">✓</span> Scholarship and fee support
+                </li>
+                <li class="flex items-center gap-3 text-[#102a4b] text-sm">
+                  <span class="text-amber">✓</span> Academic mentorship
+                </li>
+              </ul>
+              <div class="flex flex-wrap gap-4">
+                <a
+                  href="#donate"
+                  class="inline-flex items-center rounded-full bg-[#102a4b] text-white text-sm font-semibold px-6 py-3 hover:bg-amberdark transition-colors"
+                  >Donate Now</a
+                >
+                <a
+                  href="#"
+                  class="inline-flex items-center rounded-full border border-[#DDE2E8] text-[#102a4b] text-sm font-semibold px-6 py-3 hover:bg-white/10 transition-colors"
+                  >Program Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- campaign 2 -->
+          <div
+            class="reveal grid md:grid-cols-2 rounded-3xl overflow-hidden bg-white/[0.03] border border-[#DDE2E8]"
+          >
+            <div class="p-6 sm:p-8 md:p-10 flex flex-col justify-center order-2 md:order-1">
+              <p
+                class="text-xs font-semibold tracking-[0.15em] uppercase text-amber mb-4"
+              >
+                Campaign 02
+              </p>
+              <h3 class="font-display font-semibold text-xl sm:text-2xl text-[#102a4b] mb-3">
+                Digital Pathshala
+              </h3>
+              <p class="text-[#667085] text-sm leading-relaxed mb-6">
+                Digital Pathshala closes the access gap by bringing devices,
+                digital skills, and guided learning to students who may
+                otherwise be left behind.
+              </p>
+              <ul class="space-y-2 mb-8">
+                <li class="flex items-center gap-3 text-[#102a4b] text-sm">
+                  <span class="text-amber">✓</span> Digital literacy awareness
+                </li>
+                <li class="flex items-center gap-3 text-[#102a4b] text-sm">
+                  <span class="text-amber">✓</span> Access to devices and online
+                  resources
+                </li>
+                <li class="flex items-center gap-3 text-[#102a4b] text-sm">
+                  <span class="text-amber">✓</span> Guided learning support
+                </li>
+              </ul>
+              <div class="flex flex-wrap gap-4">
+                <a
+                  href="#donate"
+                  class="inline-flex items-center rounded-full bg-[#102a4b] text-white text-sm font-semibold px-6 py-3 hover:bg-amberdark transition-colors"
+                  >Donate Now</a
+                >
+                <a
+                  href="#"
+                  class="inline-flex items-center rounded-full border border-[#DDE2E8] text-[#102a4b] text-sm font-semibold px-6 py-3 hover:bg-white/10 transition-colors"
+                  >Program Details</a
+                >
+              </div>
+            </div>
+            <img
+              src="/src/assets/laptop.png"
+              alt="Student learning on a laptop"
+              class="w-full h-56 sm:h-72 md:h-full object-cover order-1 md:order-2"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MERA SANKALP ================= -->
+    <section class="bg-cream py-16 lg:py-24 w-full">
+
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 flex flex-col lg:flex-row rounded-[28px] lg:rounded-[40px] overflow-hidden">
+        <img
+          src="/src/assets/meraSankalp.png"
+          alt="Two students in school uniform"
+          class="reveal rounded-t-[28px] lg:rounded-t-none lg:rounded-bl-[40px] lg:rounded-tl-[40px] w-full lg:w-[42%] h-[280px] sm:h-[380px] md:h-[500px] lg:h-auto object-cover"
+        />
+
+        <div class="bg-white w-full p-6 sm:p-10 md:p-12 lg:p-20 rounded-b-[28px] lg:rounded-bl-none lg:rounded-r-[40px]">
+          <p
+            class="reveal text-amberdark text-xs font-semibold tracking-[0.2em] uppercase mb-4 flex items-center gap-1"
+          > <span class="rounded-xs block w-[40px] h-[1px] bg-amber"></span
+            >
+            Our Main Purpose
+          </p>
+          <h2
+            class="reveal w-full lg:max-w-[500px] font-display font-bold text-2xl sm:text-3xl lg:text-4xl leading-tight mb-5 text-[#102a4b]"
+          >
+            Mera Sankalp:<br class="hidden sm:block"> Education that cares for the mind and the future.
+          </h2>
+          <div class="reveal text-stone text-sm sm:text-base leading-relaxed mb-9 space-y-4">
+            <p>Education is about confidence, emotional strength, and feeling supported—not only textbooks and examinations.</p>
+            <p>At GiveWise Education Foundation, we believe every student deserves equal access to intelligent mentoring, quality education, and positive opportunities.</p>
+          </div>
+
+          <div class="reveal grid grid-cols-1 sm:grid-cols-2 gap-5 mb-9">
+            <div class="rounded-xl p-5 bg-[#F7F8FA]">
+              <h4 class="font-display text-[#102a4b] font-bold text-sm mb-2">
+                Our Mission
+              </h4>
+              <p class="text-stone text-xs leading-relaxed">
+                Make education accessible, equitable, and meaningful.
+              </p>
+            </div>
+            <div class="rounded-xl p-5 bg-[#F7F8FA]">
+              <h4 class="font-display text-[#102a4b] font-bold text-sm mb-2">
+                Our Philosophy
+              </h4>
+              <p class="text-stone text-xs leading-relaxed">
+                Learn from the past and build for the future.
+              </p>
+            </div>
+            <div class="rounded-xl p-5 bg-[#F7F8FA]">
+              <h4 class="font-display text-[#102a4b] font-bold text-sm mb-2">
+                Our Values
+              </h4>
+              <p class="text-stone text-xs leading-relaxed">
+                Empathy, clarity, consistency, and openness.
+              </p>
+            </div>
+            <div class="rounded-xl p-5 bg-[#F7F8FA]">
+              <h4 class="font-display text-[#102a4b] font-bold text-sm mb-2">
+                Our Promise
+              </h4>
+              <p class="text-stone text-xs leading-relaxed">
+                Every student feels supported, not forgotten.
+              </p>
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="reveal inline-flex items-center rounded-full bg-[#102a4b] font-light text-white text-sm px-6 sm:px-7 py-3 sm:py-3.5 hover:bg-navy transition-colors"
+            >Learn More About Mera Sankalp</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EVENTS ================= -->
+    <section id="events" class="bg-white py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-10 items-end mb-10 lg:mb-14">
+          <div>
+            <p
+              class="reveal text-amber text-xs font-semibold tracking-[0.2em] uppercase mb-4 flex items-center gap-1"
+            > <span class="rounded-xs block w-[40px] h-[1px] bg-amber"></span
+            >
+              Upcoming Events
+            </p>
+            <h2
+              class="reveal font-display font-bold text-2xl sm:text-3xl lg:text-4xl leading-tight text-[#102a4b]"
+            >
+              Come to our events for more information.
+            </h2>
+          </div>
+          <p class="reveal text-sm sm:text-base text-[#667085] leading-relaxed">
+            Join students, volunteers, educators, and community members in
+            conversations and activities that create lasting awareness.
+          </p>
+        </div>
+
+        <div class="space-y-5">
+          <div
+            class="reveal flex flex-col sm:flex-row sm:items-center gap-5 bg-white/[0.04] border border-[#DDE2E8] rounded-2xl p-5"
+          >
+            <div class="flex flex-col sm:flex-row gap-5 flex-1">
+              <div
+                class="w-16 h-16 sm:w-25 sm:h-25 rounded-xl bg-[#102a4b] text-white flex flex-col items-center justify-center shrink-0"
+              >
+                <span class="font-display font-bold text-xl leading-none"
+                  >09</span
+                >
+                <span class="text-[10px] font-semibold uppercase">March</span>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=200&auto=format&fit=crop"
+                alt=""
+                class="hidden sm:block w-32 h-24 rounded-xl object-cover"
+              />
+              <div>
+                <p class="font-display font-semibold text-amber -mb-1.5">
+                  New Delhi 10:00 AM
+                </p>
+                <h3 class="text-[#102a4b] text-xl sm:text-[1.5rem]">
+                   Community Learning Center
+                </h3>
+                <p class="text-[#667085] text-sm pr-4">A student-led discussion on cleaner neighborhoods, environmental responsibility, and everyday action.</p>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="inline-flex items-center justify-center rounded-full text-[#102a4b] border border-[#DDE2E8] bg-white text-sm font-semibold px-6 py-2.5 hover:bg-amber transition-colors shrink-0"
+              >View Details</a
+            >
+          </div>
+
+          <div
+            class="reveal flex flex-col sm:flex-row sm:items-center gap-5 bg-white/[0.04] border border-[#DDE2E8] rounded-2xl p-5"
+          >
+            <div class="flex flex-col sm:flex-row gap-5 flex-1">
+              <div
+                class="w-16 h-16 sm:w-25 sm:h-25 rounded-xl bg-[#102a4b] text-white flex flex-col items-center justify-center shrink-0"
+              >
+                <span class="font-display font-bold text-xl leading-none"
+                  >29</span
+                >
+                <span class="text-[10px] font-semibold uppercase">March</span>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=200&auto=format&fit=crop"
+                alt=""
+                class="hidden sm:block w-32 h-24 rounded-xl object-cover"
+              />
+              <div>
+                <h3 class="font-display font-semibold text-amber">
+                  Digital Pathshala Volunteer Drive
+                </h3>
+                <h3 class="text-[#102a4b] text-xl sm:text-[1.5rem] mt-1">
+               GiveWise Community Hall
+                </h3>
+               <p class="text-[#667085] text-sm pr-4">A collaborative event focused on water conservation, sustainability, and responsible community participation.</p>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="inline-flex items-center justify-center rounded-full bg-white text-[#102a4b] border border-[#DDE2E8] text-sm font-semibold px-6 py-2.5 hover:bg-amber transition-colors shrink-0"
+              >View Details</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BLOG ================= -->
+    <section id="blog" class="bg-[#F7F8FA] py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+        <div class="flex flex-wrap items-end justify-between gap-6 mb-10 lg:mb-14">
+          <div>
+            <p
+              class="reveal text-amberdark text-xs font-semibold tracking-[0.2em] uppercase mb-4 flex items-center gap-1"
+            >
+            <span class="rounded-xs block w-[40px] h-[1px] bg-amber"></span
+            >
+              Stories And Updates
+            </p>
+            <h2
+              class="reveal font-display font-bold text-2xl sm:text-3xl lg:text-4xl leading-tight text-[#102a4b]"
+            >
+              Our recent blog and news.
+            </h2>
+          </div>
+          <a
+            href="#"
+            class="reveal text-sm font-semibold text-[#102a4b] border border-[#dde2e8] bg-white px-4 py-3 rounded-full hover:text-amberdark transition-colors"
+            >View All Blogs →</a
+          >
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-10">
+          <a
+            href="#"
+            class="reveal group rounded-3xl overflow-hidden border border-black/10 block"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1000&auto=format&fit=crop"
+              alt="Books and an apple"
+              class="w-full h-52 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div class="p-6 sm:p-8">
+              <p
+                class="text-xs font-semibold tracking-[0.15em] uppercase text-amberdark mb-3"
+              >
+                Featured Story
+              </p>
+              <h3 class="font-display font-semibold text-lg sm:text-xl mb-2 text-[#102a4b]">
+                Mera Sankalp: Education That Cares for the Mind and the Future
+              </h3>
+              <p class="text-stone text-sm leading-relaxed">
+                Why meaningful support means confidence, emotional wellbeing,
+                and a student's sense of possibility.
+              </p>
+            </div>
+          </a>
+
+          <div class="space-y-4">
+            <a href="#" class="reveal group flex flex-col sm:flex-row gap-4 p-3 bg-white rounded-[20px] sm:h-[120px]">
+              <img
+                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=300&auto=format&fit=crop"
+                alt=""
+                class="w-full sm:w-24 h-40 sm:h-24 rounded-xl object-cover shrink-0 group-hover:opacity-80 transition-opacity"
+              />
+              <div>
+                <p
+                  class="text-[11px] font-semibold tracking-[0.15em] uppercase text-amberdark mb-2"
+                >
+                  Volunteer Stories
+                </p>
+                <h4 class="font-display font-semibold leading-snug sm:w-50">
+                  Volunteers Who Teach, Listen and Change Students' Lives
+                </h4>
+              </div>
+            </a>
+            <a href="#" class="reveal group flex flex-col sm:flex-row gap-4 p-3 bg-white rounded-[20px] sm:h-[120px]">
+              <img
+                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=300&auto=format&fit=crop"
+                alt=""
+                class="w-full sm:w-24 h-40 sm:h-24 rounded-xl object-cover shrink-0 group-hover:opacity-80 transition-opacity"
+              />
+              <div>
+                <p
+                  class="text-[11px] font-semibold tracking-[0.15em] uppercase text-amberdark mb-2"
+                >
+                  Education
+                </p>
+                <h4 class="font-display font-semibold leading-snug">
+                  How Community Support Creates Long-Term Student Confidence
+                </h4>
+              </div>
+            </a>
+            <a href="#" class="reveal group flex flex-col sm:flex-row gap-4 p-3 bg-white rounded-[20px] sm:h-[120px]">
+              <img
+                src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=300&auto=format&fit=crop"
+                alt=""
+                class="w-full sm:w-24 h-40 sm:h-24 rounded-xl object-cover shrink-0 group-hover:opacity-80 transition-opacity"
+              />
+              <div>
+                <p
+                  class="text-[11px] font-semibold tracking-[0.15em] uppercase text-amberdark mb-2"
+                >
+                  Foundation Updates
+                </p>
+                <h4 class="font-display font-semibold leading-snug">
+                  New Learning Resources Reach More Classrooms
+                </h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section id="donate" class="bg-white py-14 lg:py-20">
+      <div
+        class="bg-[#102a4b] w-full max-w-7xl mx-auto rounded-[24px] sm:rounded-[34px] p-6 sm:p-10 md:p-12 lg:p-16 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-10"
+      >
+        <div class="max-w-xl">
+          <p
+            class="reveal text-amber text-xs font-semibold tracking-[0.2em] uppercase mb-4 flex items-center gap-1"
+          >
+           <span class="rounded-xs block w-[40px] h-[1px] bg-amber"></span
+            >
+            Take Meaningful Action
+          </p>
+          <h2
+            class="reveal font-display text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-medium leading-tight text-white mb-4"
+          >
+            Together we can change someone's future.
+          </h2>
+          <p class="reveal text-white/60 text-sm sm:text-base leading-relaxed">
+            Your generosity, awareness, and contribution help a student move
+            from uncertainty to a future filled with real opportunity.
+          </p>
+        </div>
+        <div class="reveal flex flex-col w-full sm:w-auto gap-4 shrink-0">
+          <a
+            href="#"
+            class="inline-flex items-center justify-center w-full sm:w-auto rounded-full border bg-amber border-white/30 text-[#102a4b] text-center text-sm font-medium px-7 py-3.5 hover:bg-white/90 transition-colors"
+            >Become a Volunteer</a
+          >
+          <a
+            href="#"
+            class="inline-flex items-center justify-center w-full sm:w-auto rounded-full bg-white text-[#102a4b] text-sm font-medium px-7 py-3.5 hover:bg-amberdark hover:text-white transition-colors"
+            >Donate Today</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contact" class="bg-[#102a4b] pt-16 lg:pt-20 pb-8">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 pb-12 lg:pb-14 border-b border-white/10"
+        >
+          <div class="sm:col-span-2 lg:col-span-2">
+            <div class="flex items-center gap-2 mb-4">
+              <a href="#" class="flex items-center gap-2 shrink-0">
+                <div id="logo" class="w-28 h-12">
+                  <img src="/src/assets/Frame2.png" alt="logo" class="w-full h-full object-contain" />
+                </div>
+              </a>
+            </div>
+            <p class="text-white/50 text-sm leading-relaxed max-w-xs">
+              GiveWise Education Foundation supports students with quality
+              education, mentorship, digital skills, scholarships, and a fair
+              start in life.
+            </p>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-white font-display font-semibold text-sm mb-5">
+              Quick Links
+            </h4>
+            <ul class="space-y-3 text-sm text-white/50">
+              <li>
+                <a href="/src/Pages/home.html" class="hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="/src/Pages/campaigns.html" class="hover:text-white transition-colors"
+                  >Campaigns</a
+                >
+              </li>
+              <li>
+                <a href="/src/Pages/" class="hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="/src/Pages/blog.html" class="hover:text-white transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-white transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-white font-display font-semibold text-sm mb-5">
+              Programs
+            </h4>
+            <ul class="space-y-3 text-sm text-white/50">
+              <li>
+                <a href="#programs" class="hover:text-white transition-colors"
+                  >Digital Pathshala</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >For Students</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Mera Sankalp</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Volunteer Program</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-white font-display font-semibold text-sm mb-5">
+              Contact
+            </h4>
+            <ul class="space-y-3 text-sm text-white/50">
+              <li>
+                <a href="#home" class="hover:text-white transition-colors"
+                  >Hello@givwise.org</a
+                >
+              </li>
+              <li>
+                <a href="#programs" class="hover:text-white transition-colors"
+                  >+1 234567890</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-white transition-colors"
+                  >New Delhi, India</a
+                >
+              </li>
+              <li>
+                <a href="/src/Pages/blog.html" class="hover:text-white transition-colors"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full sm:col-span-2 md:col-span-1">
+            <h4 class="text-white font-display font-semibold text-sm mb-5 w-40">
+              Stay Connected
+            </h4>
+            <p class="text-white/50 text-sm mb-4">
+              Get updates on stories, students, and campaigns.
+            </p>
+            <form id="newsletter-form" class="flex w-full">
+              <input
+                type="email"
+                required
+                placeholder="Your email"
+                class="flex-1 w-200 rounded-bl-[10px] rounded-tl-[10px] bg-white/10 border border-white/15 text-white text-sm placeholder-white/40 px-4 py-2.5 outline-none"
+              />
+              <button
+                type="submit"
+                class="shrink-0 rounded-br-[10px] rounded-tr-[10px] font-bold bg-amber text-ink text-sm  px-4 hover:bg-amberdark transition-colors"
+              >
+                →
+              </button>
+            </form>
+            <p id="newsletter-msg" class="text-amber text-xs mt-3 hidden">
+              Thanks for subscribing!
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"
+        >
+          <p class="text-white/40 text-xs text-center sm:text-left">
+            © <span id="year"></span> GiveWise Education Foundation. All rights
+            reserved.
+          </p>
+          <div class="flex gap-6 text-white/40 text-xs">
+            <a href="#" class="hover:text-white transition-colors"
+              >facebook</a
+            >
+            <a href="#" class="hover:text-white transition-colors"
+              >Instagram</a
+            >
+             <a href="#" class="hover:text-white transition-colors"
+              >LinkdIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/src/JS/index.js"></script>
+  </body>
+</html>

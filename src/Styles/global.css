@@ -1,0 +1,66 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #F2A93B;
+  color: #0B0E13;
+}
+/* ===== Scroll reveal animation ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+/* ===== Adaptive header (fully transparent, text color swaps only) ===== */
+#site-header {
+  background-color: #FFF;
+  transition: box-shadow 0.25s ease, border-color 0.35s ease;
+}
+/* Dark theme = section behind header is dark -> white text */
+#site-header[data-theme="dark"] {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+#site-header[data-theme="dark"] .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+}
+#site-header[data-theme="dark"] .nav-link:hover {
+  color: #ffffff;
+}
+/* Light theme = section behind header is light -> dark text */
+#site-header[data-theme="light"] {
+  border-bottom-color: rgba(11, 14, 19, 0.08);
+}
+#site-header[data-theme="light"] .nav-link {
+  color: rgba(11, 14, 19, 0.75);
+}
+#site-header[data-theme="light"] .nav-link:hover {
+  color: #0b0e13;
+}
+
+/* Mobile dropdown always stays a solid, readable surface regardless of header theme */
+#mobile-menu {
+  background-color: #ffffff;
+}
+#mobile-menu a {
+  color: rgba(11, 14, 19, 0.8);
+}
