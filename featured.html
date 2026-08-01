@@ -1,25 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Events Timeline Section</title>
-
- <link rel="stylesheet" href="/dist/output.css" />
+<meta charset="UTF-8">
+<title>Premise Journal — Article</title>
+<link rel="stylesheet" href="/dist/output.css" />
     <link rel="stylesheet" href="/src/Styles/global.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Noto+Sans+Devanagari:wght@600;700&display=swap"
-  rel="stylesheet"
-/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  body { font-family: 'Inter', sans-serif; }
-  .devanagari { font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+  .font-manrope{ font-family:'Manrope', sans-serif; }
+  .font-inter{ font-family:'Inter', sans-serif; }
 </style>
 </head>
-<body class="bg-white">
-        <header
+<body class="bg-white text-[#161B33] font-inter">
+          <header
       id="site-header"
       class="fixed top-0 inset-x-0 z-50 bg-white border-b border-black/5 transition-shadow"
     >
@@ -103,8 +97,8 @@
         >
       </div>
     </header>
-        
-      <section class="relative overflow-hidden mt-10">
+
+   <section class="relative overflow-hidden mt-10">
     <img
       src="/src/assets/events.jpg"
       alt="Students engaged in a classroom, one raising a hand"
@@ -134,170 +128,81 @@
     </div>
   </section>
 
-  <section id="events" class="bg-white py-16 lg:py-24">
-    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+  <div class="max-w-[1100px] mx-auto px-6 pt-[70px] pb-24 grid grid-cols-[70px_1fr_280px] gap-10 max-[820px]:grid-cols-1 max-[820px]:pt-10">
 
-      <!-- Header -->
-      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14 lg:mb-20">
-        <div class="max-w-xl">
-          <p class="text-amber text-xs font-semibold tracking-[0.2em] uppercase mb-4 flex items-center gap-2">
-            <span class="rounded-xs block w-[26px] h-[1px] bg-amber"></span>
-            Our Events
-          </p>
-          <h2 class="font-display font-bold text-3xl sm:text-4xl lg:text-[44px] leading-[1.15] text-[#102a4b]">
-            A simple timeline of<br class="hidden sm:block" />
-            meaningful action.
-          </h2>
-        </div>
-        <p class="max-w-sm text-sm sm:text-base  border-l border-[#e4e9ef] text-stone leading-relaxed lg:pb-2 p-4">
-          Instead of ordinary event cards, each initiative is presented as a
-          visual story with its own purpose, audience, and learning outcome.
+    <!-- Rotated logo column -->
+    <div class="flex items-start justify-center pt-1.5 max-[820px]:hidden">
+      <span class="font-manrope font-bold text-[12px] tracking-[0.12em] text-[#D9922B] whitespace-nowrap [writing-mode:vertical-rl] rotate-180">
+        PREMISE JOURNAL
+      </span>
+    </div>
+
+    <!-- Main article column -->
+    <div class="min-w-0">
+      <div class="flex items-center gap-2.5 mb-[18px]">
+        <span class="w-[22px] h-0.5 bg-[#E4A13C] inline-block"></span>
+        <span class="font-manrope font-bold text-[12px] tracking-[0.12em] text-[#D9922B]">ARTICLE</span>
+      </div>
+
+      <h1 class="font-manrope font-extrabold text-[44px] leading-[1.16] tracking-[-0.01em] mb-7 text-[#161B33] max-[820px]:text-[32px]">
+        Education must care for academic progress, emotional strength, confidence, and the future a student believes is possible.
+      </h1>
+
+      <div class="bg-[#FBF3E1] border-l-[3px] border-[#E4A13C] px-[22px] py-[18px] mb-10">
+        <p class="font-inter text-[15px] leading-[1.6] text-[#3B3F55] m-0">
+          Education becomes transformative when it supports both the learner's mind and their future.
         </p>
       </div>
 
-      <!-- Timeline -->
-      <div class="relative">
-        <!-- vertical connecting line -->
-        <div
-          class="hidden md:block absolute top-2 bottom-2 w-px bg-[#E4E7EC]"
-          style="left: 43px;"
-        ></div>
+      <section>
+        <h2 class="font-manrope font-bold text-[21px] tracking-[-0.005em] mb-3.5 text-[#161B33]">Education Beyond Marks</h2>
+        <p class="font-inter text-[14.5px] leading-[1.7] text-[#6B7280] mb-3.5">A student's development cannot be measured only through examination scores. Many learners carry uncertainty, financial pressure, family expectations, and fear of failure into the classroom.</p>
+        <p class="font-inter text-[14.5px] leading-[1.7] text-[#6B7280] m-0">Mera Sankalp is built around the idea that quality education must also create confidence, emotional stability, curiosity, and hope.</p>
+      </section>
 
-        <div class="space-y-8 lg:space-y-10">
+      <section class="mt-[34px]">
+        <h2 class="font-manrope font-bold text-[21px] tracking-[-0.005em] mb-3.5 text-[#161B33]">What Meaningful Support Looks Like</h2>
+        <p class="font-inter text-[14.5px] leading-[1.7] text-[#6B7280] m-0">Students need access to dependable educators and mentors who understand both their academic needs and personal circumstances.</p>
+        <ul class="mt-3.5 pl-[18px] list-disc marker:text-[#C9CBD6]">
+          <li class="font-inter text-[14.5px] leading-[1.9] text-[#6B7280]">Structured academic guidance</li>
+          <li class="font-inter text-[14.5px] leading-[1.9] text-[#6B7280]">Career and examination mentorship</li>
+          <li class="font-inter text-[14.5px] leading-[1.9] text-[#6B7280]">Emotional encouragement</li>
+          <li class="font-inter text-[14.5px] leading-[1.9] text-[#6B7280]">Safe conversations about challenges</li>
+          <li class="font-inter text-[14.5px] leading-[1.9] text-[#6B7280]">Exposure to new opportunities</li>
+        </ul>
+      </section>
 
-          <!-- ===== EVENT 01 ===== -->
-          <div class="relative flex flex-col md:flex-row md:items-start gap-5 md:gap-8">
-            <!-- date badge: sticks in place, then gets covered by the next badge -->
-            <div class="shrink-0 md:sticky z-10" style="top: 104px;">
-              <div
-                class="w-[86px] h-[86px] rounded-2xl bg-cream flex flex-col items-center justify-center shadow-[0_4px_14px_rgba(16,42,75,0.06)]"
-              >
-                <span class="font-display font-extrabold text-2xl text-[#102a4b] leading-none">09</span>
-                <span class="text-[10px] font-semibold tracking-widest uppercase text-amberdark mt-1">March 2025</span>
-              </div>
-            </div>
+      <section class="mt-[34px]">
+        <h2 class="font-manrope font-bold text-[21px] tracking-[-0.005em] mb-3.5 text-[#161B33]">A Stronger Future</h2>
+        <p class="font-inter text-[14.5px] leading-[1.7] text-[#6B7280] mb-3.5">When students feel heard and supported, they are more likely to participate, ask questions, recover from setbacks, and make confident choices about their education and career.</p>
+        <p class="font-inter text-[14.5px] leading-[1.7] text-[#6B7280] m-0">The aim is not only to help a student pass an examination. It is to help them develop the knowledge, resilience, and self-belief required for lifelong success.</p>
+      </section>
+    </div>
 
-            <!-- card -->
-            <div class="flex-1 grid md:grid-cols-2 rounded-3xl overflow-hidden border border-[#EEF1F4] bg-white shadow-[0_10px_30px_rgba(16,42,75,0.05)]">
-              <div class="relative h-56 sm:h-72 md:h-full min-h-[280px]">
-                <img
-                  src="/src/assets/Enviroment.png"
-                  alt="Volunteers cleaning up a beach"
-                  class="w-full h-full object-cover"
-                />
-               
-              </div>
+    <!-- Sidebar -->
+    <div class="flex flex-col gap-5">
+      <div class="bg-[#F4F5F8] rounded-lg p-5">
+        <h3 class="font-manrope font-bold text-[14px] mb-3.5 text-[#161B33]">Article Details</h3>
+        <div class="font-inter text-[12.5px] text-[#8B8FA3] leading-[1.9]"><b class="font-semibold text-[#4B4F63]">Category:</b> Mera Sankalp</div>
+        <div class="font-inter text-[12.5px] text-[#8B8FA3] leading-[1.9]"><b class="font-semibold text-[#4B4F63]">Published:</b> Dec 30, 2025</div>
+        <div class="font-inter text-[12.5px] text-[#8B8FA3] leading-[1.9]"><b class="font-semibold text-[#4B4F63]">Author:</b> Givewise@2025</div>
+      </div>
 
-              <div class="relative p-6 sm:p-8 md:p-10 flex flex-col justify-center overflow-hidden">
-                <span
-                  class="pointer-events-none select-none absolute -top-0 right-4 sm:right-6 font-display font-bold text-[80px] sm:text-[96px] leading-none text-[#F2F4F7]"
-                  aria-hidden="true"
-                >01</span>
+      <div class="bg-[#F4F5F8] rounded-lg p-5">
+        <h3 class="font-manrope font-bold text-[14px] mb-3.5 text-[#161B33]">More Stories</h3>
+        <div class="font-inter text-[13px] text-[#4B4F63] leading-[2.3] cursor-pointer hover:text-[#D9922B]">Mera Sankalp</div>
+        <div class="font-inter text-[13px] text-[#4B4F63] leading-[2.3] cursor-pointer hover:text-[#D9922B]">Volunteer Stories</div>
+        <div class="font-inter text-[13px] text-[#4B4F63] leading-[2.3] cursor-pointer hover:text-[#D9922B]">Student Wellbeing</div>
+      </div>
 
-                <p class="relative text-xs font-semibold tracking-[0.15em] uppercase text-amber mb-4">
-                  Environmental Awareness
-                </p>
-                <h3 class="relative font-display font-semibold text-xl sm:text-2xl lg:text-[35px] text-[#102a4b] mb-3 leading-snug">
-                  <span class="devanagari">स्वच्छ पर्यावरण संवाद</span> | Clean
-                  Environment Awareness Dialogue
-                </h3>
-                <p class="relative text-stone text-sm  mb-6 leading-[2rem]">
-                  Importance of cleanliness in schools and neighborhoods.
-                  Reducing plastic waste and proper garbage disposal. Student
-                  responsibility in keeping surroundings clean. Building
-                  habits for a cleaner and healthier environment.
-                </p>
-
-                <div class="relative flex flex-wrap gap-2 mb-8">
-                  <span class="text-xs font-medium text-[#102a4b] border border-[#DDE2E8] rounded-full px-4 py-1.5">Virtual</span>
-                  <span class="text-xs font-medium text-[#102a4b] border border-[#DDE2E8] rounded-full px-4 py-1.5">Students</span>
-                  <span class="text-xs font-medium text-[#102a4b] border border-[#DDE2E8] rounded-full px-4 py-1.5">Volunteers</span>
-                  <span class="text-xs font-medium text-[#102a4b] border border-[#DDE2E8] rounded-full px-4 py-1.5">Community Members</span>
-                </div>
-
-                <div class="relative flex flex-wrap items-center gap-5">
-                  <a
-                    href="#"
-                    class="inline-flex items-center rounded-full bg-[#102a4b] text-white text-sm font-semibold px-6 py-3 hover:bg-amberdark transition-colors"
-                    >View Event</a
-                  >
-                  <a href="#" class="inline-flex items-center gap-1 text-sm font-semibold text-[#102a4b] hover:text-amber transition-colors">
-                    Become a Volunteer <span aria-hidden="true">→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ===== EVENT 02 ===== -->
-          <div class="relative flex flex-col md:flex-row md:items-start gap-5 md:gap-8">
-            <!-- date badge: sticks in place, sits above (z-20) so it covers event 1's badge as it scrolls up -->
-            <div class="shrink-0 md:sticky z-20" style="top: 104px;">
-              <div
-                class="w-[86px] h-[86px] rounded-2xl bg-cream flex flex-col items-center justify-center shadow-[0_4px_14px_rgba(16,42,75,0.06)]"
-              >
-                <span class="font-display font-extrabold text-2xl text-[#102a4b] leading-none">29</span>
-                <span class="text-[10px] font-semibold tracking-widest uppercase text-amberdark mt-1">March 2025</span>
-              </div>
-            </div>
-
-            <!-- card -->
-            <div class="flex-1 grid md:grid-cols-2 rounded-3xl overflow-hidden border border-[#EEF1F4] bg-white shadow-[0_10px_30px_rgba(16,42,75,0.05)]">
-              <div class="relative p-6 sm:p-8 md:p-10 flex flex-col justify-center overflow-hidden order-2 md:order-1">
-                <span
-                  class="pointer-events-none select-none absolute -top-0 right-4 sm:right-6 font-display font-bold text-[80px] sm:text-[96px] leading-none text-[#F2F4F7]"
-                  aria-hidden="true"
-                >02</span>
-
-                <p class="relative text-xs font-semibold tracking-[0.15em] uppercase text-amber mb-4">
-                  Sustainability Initiative
-                </p>
-                <h3 class="relative font-display font-semibold text-xl lg:text-[35px] sm:text-2xl text-[#102a4b] mb-3 leading-snug">
-                  <span class="devanagari">हरित भारत संकल्प</span> | Green
-                  India &amp; Water Conservation Initiative
-                </h3>
-                <p class="relative text-stone text-sm leading-relaxed mb-6">
-                  Green India &amp; Water Conservation Initiative focused on
-                  planting and protecting trees, saving water, preventing
-                  wastage, and building climate responsibility.
-                </p>
-
-                <div class="relative flex flex-wrap gap-2 mb-8">
-                  <span class="text-xs font-medium text-[#102a4b] border border-[#DDE2E8] rounded-full px-4 py-1.5">Virtual</span>
-                  <span class="text-xs font-medium text-[#102a4b] border border-[#DDE2E8] rounded-full px-4 py-1.5">Students</span>
-                  <span class="text-xs font-medium text-[#102a4b] border border-[#DDE2E8] rounded-full px-4 py-1.5">Volunteers</span>
-                  <span class="text-xs font-medium text-[#102a4b] border border-[#DDE2E8] rounded-full px-4 py-1.5">Mentors</span>
-                </div>
-
-                <div class="relative flex flex-wrap items-center gap-5">
-                  <a
-                    href="#"
-                    class="inline-flex items-center rounded-full bg-[#102a4b] text-white text-sm font-semibold px-6 py-3 hover:bg-amberdark transition-colors"
-                    >View Event</a
-                  >
-                  <a href="#" class="inline-flex items-center gap-1 text-sm font-semibold text-[#102a4b]  hover:text-amber transition-colors">
-                    Become a Volunteer <span aria-hidden="true">→</span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="relative h-56 sm:h-72 md:h-full min-h-[280px] order-1 md:order-2">
-                <img
-                  src="/src/assets/treeplanting.png"
-                  alt="Hands holding a small plant and soil"
-                  class="w-full h-full object-cover"
-                />
-                
-              </div>
-            </div>
-          </div>
-
-        </div>
+      <div class="relative rounded-lg overflow-hidden min-h-[180px] flex flex-col justify-end p-[18px] bg-[#1A1E30] bg-cover bg-center" style="background-image:linear-gradient(180deg, rgba(20,24,45,0.15) 0%, rgba(15,18,35,0.85) 100%), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=500&q=60')">
+        <h4 class="font-manrope font-bold text-[16px] leading-[1.3] text-white mb-3.5 relative z-10">Help a student move forward.</h4>
+        <button class="relative z-10 bg-[#E4A13C] hover:bg-[#D9922B] border-none rounded-[5px] px-3.5 py-2.5 font-manrope font-bold text-[12px] text-[#241705] cursor-pointer w-fit">Support GiveWise</button>
       </div>
     </div>
-  </section>
-    <!-- ========stay connected============== -->
-<section class="bg-[#e3e8ee] py-10 px-4 sm:px-6 lg:px-20">
+
+  </div>
+  <section class="bg-[#e3e8ee] py-10 px-4 sm:px-6 lg:px-20">
   <div
     class="max-w-[1178px] mx-auto bg-white rounded-2xl lg:rounded-3xl
     p-6 sm:p-8 lg:p-14
@@ -468,7 +373,7 @@
 
   </div>
 </section>
-      <!-- ================= FOOTER ================= -->
+  <!-- ===================Footer================= -->
     <footer id="contact" class="bg-[#102a4b] pt-16 lg:pt-20 pb-8">
       <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
         <div
@@ -626,6 +531,6 @@
         </div>
       </div>
     </footer>
-<script src="/src/JS/index.js"></script>
+<srcipt src="/src/JS/index.js"
 </body>
 </html>
