@@ -64,3 +64,16 @@ body {
 #mobile-menu a {
   color: rgba(11, 14, 19, 0.8);
 }
+
+ @layer utilities {
+  @keyframes scroll-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.25; }
+  }
+
+  .scroll-blink {
+    animation: scroll-blink 0.6s ease-in-out infinite;
+  }
+}
+
+

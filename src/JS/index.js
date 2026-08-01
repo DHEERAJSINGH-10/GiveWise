@@ -30,7 +30,6 @@
   });
 })();
 
-// ===== Hero image carousel (Pattern A: single <img id="hero-img"> swap) =====
 (function initImgHeroCarousel() {
   const heroImg = document.getElementById('hero-img');
   if (!heroImg) return;
@@ -39,11 +38,20 @@
   const heroNext = document.getElementById('hero-next');
   const heroProgressBars = document.querySelectorAll('#hero-progress span');
 
-  const heroSlides = [
-    'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600&auto=format&fit=crop',
-    'https://givwise.com/wp-content/uploads/2025/12/aswin-thomas-bony-SPO0ST4nVbY-unsplash-scaled.jpg',
-    'https://givwise.com/wp-content/uploads/2025/12/istockphoto-1072480984-1024x1024-1.jpeg',
-  ];
+  // Read slide URLs from a data attribute on the img itself.
+  // Falls back to the img's current src if no data-slides is set,
+  // so pages that don't opt in still work with a single static image.
+  let heroSlides = [];
+  if (heroImg.dataset.slides) {
+    try {
+      heroSlides = JSON.parse(heroImg.dataset.slides);
+    } catch (e) {
+      heroSlides = [heroImg.src];
+    }
+  } else {
+    heroSlides = [heroImg.src];
+  }
+
   let heroIndex = 0;
   const HERO_AUTOPLAY_MS = 5000;
   let heroAutoplayTimer = null;
@@ -94,7 +102,6 @@
   showHeroSlide(heroIndex);
   startHeroAutoplay();
 })();
-
 // ===== Hero carousel (Pattern B: #slides .slide divs + #dots pagination) =====
 // Used by campaigns.html's crossfade hero. Runs independently of Pattern A
 // above — only initializes if #slides/#dots actually exist on the page.
@@ -246,11 +253,11 @@
 
 
 //-----------Article page----------//
+//-----------Article page----------//
 (function () {
   const ITEMS_PER_PAGE = 6;
 
   const grid = document.getElementById('articles-grid');
-  const cards = Array.from(grid.querySelectorAll('.article-card'));
   const pills = Array.from(document.querySelectorAll('.filter-pill'));
   const searchInput = document.getElementById('article-search');
   const showingCount = document.getElementById('showing-count');
@@ -259,6 +266,14 @@
   const nextBtn = document.getElementById('next-page');
   const pageNumbers = document.getElementById('page-numbers');
 
+  // Guard: this whole block only applies to the articles listing page.
+  // On any other page (home, campaigns, etc.) these elements won't exist —
+  // bail out instead of throwing and killing the rest of the script.
+  if (!grid || !searchInput || !showingCount || !noResults || !prevBtn || !nextBtn || !pageNumbers) {
+    return;
+  }
+
+  const cards = Array.from(grid.querySelectorAll('.article-card'));
   const state = { filter: 'all', query: '', page: 1 };
 
   function getFiltered() {
@@ -358,5 +373,4 @@
 
   render();
 })();
-
 
