@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About GiveWise Educational Foundation, its mission, vision, programs, governance, and leadership." />
+  <title>About Us | GiveWise Educational Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- This file assumes Tailwind is already compiled into your project's stylesheet (e.g. /dist/output.css via PostCSS/Vite). No config file or CDN script is used here. -->
+  <link rel="stylesheet" href="/dist/output.css" />
+  <link rel="stylesheet" href="/src/Styles/global.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Inter',sans-serif] text-[#172333] bg-white leading-[1.7] overflow-x-hidden scroll-smooth">
+
+  <!-- HEADER -->
+<header
+      id="site-header"
+      class="fixed top-0 inset-x-0 z-50 bg-white border-b border-black/5 transition-shadow"
+    >
+      <div
+        class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 flex items-center justify-between h-20"
+      >
+        <a href="#" class="flex items-center gap-2 shrink-0">
+          <div id="logo" class="w-28 sm:w-33 h-12 sm:h-15">
+            <img src="/src/assets/Frame1.png" alt="logo" class="w-full h-full object-contain" />
+          </div>
+        </a>
+
+        <nav
+          class="hidden lg:flex items-center gap-9 text-sm text-ink/70 font-medium"
+        >
+          <a href="/index.html" class="hover:text-ink transition-colors">Home</a>
+          <a href="/campaigns.html" class="hover:text-ink transition-colors"
+            >Campaigns</a
+          >
+          <a href="/event.html" class="hover:text-ink transition-colors">Events</a>
+          <a href="#about" class="hover:text-ink transition-colors">About Us</a>
+          <a href="/blog.html" class="hover:text-ink transition-colors">Blog</a>
+          <a href="/contact.html" class="hover:text-ink transition-colors"
+            >Contact Us</a
+          >
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-6">
+          <a
+            href="#donate"
+            class="inline-flex items-center rounded-full bg-[#183a67] text-white text-sm font-semibold px-6 py-2.5 hover:bg-amberdark transition-colors"
+            >Donate Now</a
+          >
+        </div>
+
+        <button
+          id="menu-btn"
+          aria-label="Toggle menu"
+          class="lg:hidden text-ink p-2"
+        >
+          <svg
+            id="icon-open"
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+          </svg>
+          <svg
+            id="icon-close"
+            class="hidden"
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="lg:hidden hidden border-t border-black/5 bg-white px-5 sm:px-6 py-6 space-y-5"
+      >
+        <a href="/index.html" class="block text-ink/80 font-medium">Home</a>
+        <a href="/campaigns.html" class="block text-ink/80 font-medium">Campaigns</a>
+        <a href="/event.html" class="block text-ink/80 font-medium">Events</a>
+        <a href="#about" class="block text-ink/80 font-medium">About Us</a>
+        <a href="/blog.html" class="block text-ink/80 font-medium">Blog</a>
+        <a href="/contact.html" class="block text-ink/80 font-medium">Contact Us</a>
+        <a
+          href="#donate"
+          class="inline-flex items-center rounded-full bg-amber text-ink text-sm font-semibold px-6 py-2.5"
+          >Donate Now</a
+        >
+      </div>
+    </header>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="about" class="relative min-h-[780px] md:min-h-[92vh] flex items-end overflow-hidden bg-[#071d31] text-white">
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=2000&q=90" alt="Students learning" class="w-full h-full object-cover" />
+      </div>
+      <div class="absolute inset-0 z-[1] bg-[linear-gradient(90deg,rgba(7,29,49,.92),rgba(7,29,49,.56)_52%,rgba(7,29,49,.15)),linear-gradient(0deg,rgba(7,29,49,.72),transparent_55%)]"></div>
+
+      <div class="relative z-[2] w-full max-w-[1180px] mx-auto px-5 sm:px-7 py-[135px] sm:py-[160px] pb-14 sm:pb-[70px] grid grid-cols-1 lg:grid-cols-[1fr_330px] items-end gap-10 lg:gap-[70px]">
+        <div class="reveal opacity-0 translate-y-6 transition-all duration-700">
+          <span class="inline-flex items-center gap-2.5 text-[#f0c979] text-xs font-semibold tracking-[0.14em] uppercase before:content-[''] before:w-7 before:h-px before:bg-current">About GiveWise</span>
+          <h1 class="max-w-[880px] text-white font-medium text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[7.4rem] leading-[1.08] tracking-[-0.035em] mt-4 mb-6 font-['Manrope',sans-serif]">Building futures through education.</h1>
+          <p class="max-w-[700px] text-white/75">GiveWise Educational Foundation brings volunteers, educators, mentors, and supporters together to help children from underserved communities learn, grow, and build meaningful futures.</p>
+          <div class="flex gap-3 flex-wrap mt-7">
+            <a href="#mission" class="inline-flex items-center justify-center gap-2 min-h-[42px] px-[17px] rounded-xl text-sm font-semibold bg-[#e2a43a] text-[#071d31] hover:-translate-y-0.5 transition-transform duration-200">Explore Our Purpose</a>
+            <a href="#leaders" class="inline-flex items-center justify-center gap-2 min-h-[42px] px-[17px] rounded-xl text-sm font-semibold border border-white/30 text-white hover:border-white hover:-translate-y-0.5 transition-all duration-200">Meet Our Leaders</a>
+          </div>
+        </div>
+
+        <aside class="reveal opacity-0 translate-y-6 transition-all duration-700 p-7 rounded-[22px] bg-white/10 border border-white/20 backdrop-blur-md">
+          <span class="block text-[#efc979] text-xs tracking-[0.13em] uppercase mb-4">Registered Non-Profit</span>
+          <div class="py-3 border-b border-white/15">
+            <strong class="block text-white font-semibold text-[0.95rem] font-['Manrope',sans-serif]">Section 8 Company</strong>
+            <small class="text-white/60 text-[0.78rem]">Companies Act, 2013</small>
+          </div>
+          <div class="py-3 border-b border-white/15">
+            <strong class="block text-white font-semibold text-[0.95rem] font-['Manrope',sans-serif]">Incorporated</strong>
+            <small class="text-white/60 text-[0.78rem]">15 November 2025</small>
+          </div>
+          <div class="py-3">
+            <strong class="block text-white font-semibold text-[0.95rem] font-['Manrope',sans-serif]">Registered Office</strong>
+            <small class="text-white/60 text-[0.78rem]">Amritsar, Punjab, India</small>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- WHO WE ARE -->
+    <section class="py-16 md:py-24 lg:py-[110px]">
+      <div class="w-full max-w-[1180px] mx-auto px-5 sm:px-7 grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-20 items-center">
+        <div class="reveal opacity-0 translate-y-6 transition-all duration-700 relative min-h-[500px] lg:min-h-[650px]">
+          <div class="absolute inset-0 right-8 sm:right-[85px] bottom-16 sm:bottom-[70px] rounded-[28px] overflow-hidden">
+            <img src="/src/assets/Container (15).png" alt="Students reading" class="w-full h-full object-cover" />
+          </div>
+          <div class="absolute right-0 bottom-0 w-[54%] sm:w-[45%] h-[210px] sm:h-[280px] border-[10px] border-white rounded-3xl overflow-hidden shadow-[0_24px_55px_rgba(14,45,74,0.12)]">
+            <img src="/src/assets/82868762eed45b156f3fc63b2b6f537c0cc9e560.jpg" alt="Mentors with students" class="w-full h-full object-cover" />
+          </div>
+          <div class="absolute top-[30px] right-2.5 z-[2] w-[110px] h-[110px] sm:w-[135px] sm:h-[135px] rounded-full bg-[#e2a43a] text-[#071d31] grid place-items-center text-center p-4 sm:p-[18px] font-bold text-[0.78rem] sm:text-[0.9rem] leading-tight font-['Manrope',sans-serif]">Education Creates Lasting Change</div>
+        </div>
+
+        <div class="reveal opacity-0 translate-y-6 transition-all duration-700">
+          <span class="inline-flex items-center gap-2.5 text-[#a66f13] text-xs font-semibold tracking-[0.14em] uppercase before:content-[''] before:w-7 before:h-px before:bg-current">Who We Are</span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5.3rem] font-medium leading-[1.08] tracking-[-0.035em] text-[#071d31] mt-4 mb-6 font-['Manrope',sans-serif]">Education is the strongest tool for social change.</h2>
+          <p class="text-[#6b7788] mb-5">GiveWise Educational Foundation is a Section 8 Company registered under the Companies Act, 2013, Government of India.</p>
+          <p class="text-[#6b7788] mb-5">The foundation is committed to improving quality education by connecting volunteers, educators, mentors, and supporters with children from underserved communities. Through academic support, career guidance, mentorship, and community-driven initiatives, we help students unlock their true potential and build a brighter future.</p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mt-8">
+            <div class="p-[18px] border border-[#e4e9ef] rounded-2xl">
+              <span class="block text-[#9b6a17] text-[0.7rem] uppercase tracking-[0.12em] mb-1">Registration Type</span>
+              <strong class="font-semibold text-[0.92rem] text-[#071d31] font-['Manrope',sans-serif]">Section 8 Company (Non-Profit)</strong>
+            </div>
+            <div class="p-[18px] border border-[#e4e9ef] rounded-2xl">
+              <span class="block text-[#9b6a17] text-[0.7rem] uppercase tracking-[0.12em] mb-1">CIN</span>
+              <strong class="font-semibold text-[0.92rem] text-[#071d31] font-['Manrope',sans-serif]">U85500PB2025NPL066320</strong>
+            </div>
+            <div class="p-[18px] border border-[#e4e9ef] rounded-2xl">
+              <span class="block text-[#9b6a17] text-[0.7rem] uppercase tracking-[0.12em] mb-1">Date of Incorporation</span>
+              <strong class="font-semibold text-[0.92rem] text-[#071d31] font-['Manrope',sans-serif]">15 November 2025</strong>
+            </div>
+            <div class="p-[18px] border border-[#e4e9ef] rounded-2xl">
+              <span class="block text-[#9b6a17] text-[0.7rem] uppercase tracking-[0.12em] mb-1">Registered Office</span>
+              <strong class="font-semibold text-[0.92rem] text-[#071d31] font-['Manrope',sans-serif]">Amritsar, Punjab, India</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE VALUES -->
+    <section class="py-16 md:py-24 lg:py-[110px] bg-[#fbf7ef]">
+      <div class="w-full max-w-[1180px] mx-auto px-5 sm:px-7">
+        <span class="inline-flex items-center gap-2.5 text-[#a66f13] text-xs font-semibold tracking-[0.14em] uppercase before:content-[''] before:w-7 before:h-px before:bg-current">Core Values</span>
+        <h2 class="max-w-[820px] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5.2rem] font-medium leading-[1.08] tracking-[-0.035em] text-[#071d31] mt-4 font-['Manrope',sans-serif]">The milestones we want every student to experience.</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 mt-14 border-t border-b border-[#eadfc9]">
+          <article class="reveal opacity-0 translate-y-6 transition-all duration-700 min-h-[220px] sm:min-h-[250px] p-7 sm:p-9 border-r-0 sm:border-r border-b sm:border-b lg:border-b-0 border-[#eadfc9] last:border-r-0 flex flex-col justify-between hover:bg-white hover:-translate-y-2">
+            <span class="text-[#e2a43a] text-xs tracking-[0.12em]">01</span>
+            <h3 class="text-xl sm:text-2xl max-w-[140px] text-[#071d31] font-['Manrope',sans-serif]">Best College</h3>
+            <span class="w-9 h-px bg-[#0d2d4a]"></span>
+          </article>
+          <article class="reveal opacity-0 translate-y-6 transition-all duration-700 min-h-[220px] sm:min-h-[250px] p-7 sm:p-9 border-r-0 sm:border-r border-b sm:border-b lg:border-b-0 border-[#eadfc9] last:border-r-0 flex flex-col justify-between hover:bg-white hover:-translate-y-2">
+            <span class="text-[#e2a43a] text-xs tracking-[0.12em]">02</span>
+            <h3 class="text-xl sm:text-2xl max-w-[140px] text-[#071d31] font-['Manrope',sans-serif]">Best Education</h3>
+            <span class="w-9 h-px bg-[#0d2d4a]"></span>
+          </article>
+          <article class="reveal opacity-0 translate-y-6 transition-all duration-700 min-h-[220px] sm:min-h-[250px] p-7 sm:p-9 border-r-0 sm:border-r border-b sm:border-b lg:border-b-0 border-[#eadfc9] last:border-r-0 flex flex-col justify-between hover:bg-white hover:-translate-y-2">
+            <span class="text-[#e2a43a] text-xs tracking-[0.12em]">03</span>
+            <h3 class="text-xl sm:text-2xl max-w-[140px] text-[#071d31] font-['Manrope',sans-serif]">Graduation</h3>
+            <span class="w-9 h-px bg-[#0d2d4a]"></span>
+          </article>
+          <article class="reveal opacity-0 translate-y-6 transition-all duration-700 min-h-[220px] sm:min-h-[250px] p-7 sm:p-9 border-r-0 sm:border-r border-b sm:border-b lg:border-b-0 border-[#eadfc9] last:border-r-0 flex flex-col justify-between hover:bg-white hover:-translate-y-2">
+            <span class="text-[#e2a43a] text-xs tracking-[0.12em]">04</span>
+            <h3 class="text-xl sm:text-2xl max-w-[140px] text-[#071d31] font-['Manrope',sans-serif]">Dream Job</h3>
+            <span class="w-9 h-px bg-[#0d2d4a]"></span>
+          </article>
+          <article class="reveal opacity-0 translate-y-6 transition-all duration-700 min-h-[220px] sm:min-h-[250px] p-7 sm:p-9 border-r-0 border-[#eadfc9] flex flex-col justify-between hover:bg-white hover:-translate-y-2">
+            <span class="text-[#e2a43a] text-xs tracking-[0.12em]">05</span>
+            <h3 class="text-xl sm:text-2xl max-w-[140px] text-[#071d31] font-['Manrope',sans-serif]">Growth</h3>
+            <span class="w-9 h-px bg-[#0d2d4a]"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION / VISION -->
+    <section id="mission" class="py-16 md:py-24 lg:py-[110px]">
+      <div class="w-full max-w-[1180px] mx-auto px-5 sm:px-7 grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <article class="reveal opacity-0 translate-y-6 transition-all duration-700 relative overflow-hidden min-h-[420px] sm:min-h-[480px] lg:min-h-[560px] p-7 sm:p-9 lg:p-[54px] rounded-[26px] flex flex-col justify-end bg-[#0d2d4a] text-white">
+          <span class="absolute right-6 top-3.5 font-bold text-6xl sm:text-7xl lg:text-[7rem] text-white/[0.06] font-['Manrope',sans-serif]">01</span>
+          <span class="inline-flex items-center gap-2.5 text-[#efc979] text-xs font-semibold tracking-[0.14em] uppercase before:content-[''] before:w-7 before:h-px before:bg-current">Our Mission</span>
+          <h2 class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-[4.8rem] font-medium leading-[1.08] tracking-[-0.035em] mt-3.5 mb-5 font-['Manrope',sans-serif]">Access, mentorship, opportunity.</h2>
+          <p class="text-white/70">To ensure every student has access to quality education, mentorship, and opportunities regardless of their financial background. We strive to empower children through academic excellence, career guidance, skill development, and community support, helping them become confident individuals and responsible citizens.</p>
+        </article>
+
+        <article class="reveal opacity-0 translate-y-6 transition-all duration-700 relative overflow-hidden min-h-[420px] sm:min-h-[480px] lg:min-h-[560px] p-7 sm:p-9 lg:p-[54px] rounded-[26px] flex flex-col justify-end bg-[#f6f8fb] border border-[#e4e9ef]">
+          <span class="absolute right-6 top-3.5 font-bold text-6xl sm:text-7xl lg:text-[7rem] text-[#e9edf1] font-['Manrope',sans-serif]">02</span>
+          <span class="inline-flex items-center gap-2.5 text-[#a66f13] text-xs font-semibold tracking-[0.14em] uppercase before:content-[''] before:w-7 before:h-px before:bg-current">Our Vision</span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[4.8rem] font-medium leading-[1.08] tracking-[-0.035em] text-[#071d31] mt-3.5 mb-5 font-['Manrope',sans-serif]">A future where every child can dream freely.</h2>
+          <p class="text-[#6b7788]">To create a future where every child receives equal educational opportunities and has the confidence to achieve their dreams. We envision a society where education becomes the foundation for social transformation, economic growth, and lifelong success.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section class="py-16 md:py-24 lg:py-[110px] bg-[#f6f8fb]">
+      <div class="w-full max-w-[1180px] mx-auto px-5 sm:px-7 grid grid-cols-1 lg:grid-cols-[0.7fr_1.3fr] gap-12 lg:gap-[90px] items-start">
+        <div class="reveal opacity-0 translate-y-6 transition-all duration-700 lg:sticky lg:top-[110px]">
+          <span class="inline-flex items-center gap-2.5 text-[#a66f13] text-xs font-semibold tracking-[0.14em] uppercase before:content-[''] before:w-7 before:h-px before:bg-current">What We Do</span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[5rem] font-medium leading-[1.08] tracking-[-0.035em] text-[#071d31] mt-4 mb-5 font-['Manrope',sans-serif]">Our key programs create a complete support system.</h2>
+          <p class="text-[#6b7788]">GiveWise combines academic learning, exam preparation, mentorship, scholarships, and school collaboration to support students at every stage.</p>
+        </div>
+
+        <div class="grid">
+          <article class="reveal opacity-0 translate-y-6 transition-all duration-700 grid grid-cols-[50px_1fr] sm:grid-cols-[80px_1fr] gap-5 sm:gap-6 py-8 border-t border-b border-[#e4e9ef]">
+            <span class="text-[#e2a43a] font-semibold text-base sm:text-[1.05rem] font-['Manrope',sans-serif]">01</span>
+            <div>
+              <h3 class="text-xl sm:text-2xl mb-2 text-[#071d31] font-['Manrope',sans-serif]">Structured Academic Classes</h3>
+              <p class="text-[#6b7788]">Academic classes conducted by qualified volunteer educators.</p>
+            </div>
+          </article>
+          <article class="reveal opacity-0 translate-y-6 transition-all duration-700 grid grid-cols-[50px_1fr] sm:grid-cols-[80px_1fr] gap-5 sm:gap-6 py-8 border-b border-[#e4e9ef]">
+            <span class="text-[#e2a43a] font-semibold text-base sm:text-[1.05rem] font-['Manrope',sans-serif]">02</span>
+            <div>
+              <h3 class="text-xl sm:text-2xl mb-2 text-[#071d31] font-['Manrope',sans-serif]">Competitive Examination Preparation</h3>
+              <p class="text-[#6b7788]">Support for IIT-JEE, NEET, and other higher education entrance examinations.</p>
+            </div>
+          </article>
+          <article class="reveal opacity-0 translate-y-6 transition-all duration-700 grid grid-cols-[50px_1fr] sm:grid-cols-[80px_1fr] gap-5 sm:gap-6 py-8 border-b border-[#e4e9ef]">
+            <span class="text-[#e2a43a] font-semibold text-base sm:text-[1.05rem] font-['Manrope',sans-serif]">03</span>
+            <div>
+              <h3 class="text-xl sm:text-2xl mb-2 text-[#071d31] font-['Manrope',sans-serif]">Academic Mentorship &amp; Career Guidance</h3>
+              <p class="text-[#6b7788]">One-to-one and group mentoring for students.</p>
+            </div>
+          </article>
+          <article class="reveal opacity-0 translate-y-6 transition-all duration-700 grid grid-cols-[50px_1fr] sm:grid-cols-[80px_1fr] gap-5 sm:gap-6 py-8 border-b border-[#e4e9ef]">
+            <span class="text-[#e2a43a] font-semibold text-base sm:text-[1.05rem] font-['Manrope',sans-serif]">04</span>
+            <div>
+              <h3 class="text-xl sm:text-2xl mb-2 text-[#071d31] font-['Manrope',sans-serif]">Scholarship Assistance</h3>
+              <p class="text-[#6b7788]">Guidance and support for students seeking scholarship opportunities.</p>
+            </div>
+          </article>
+          <article class="reveal opacity-0 translate-y-6 transition-all duration-700 grid grid-cols-[50px_1fr] sm:grid-cols-[80px_1fr] gap-5 sm:gap-6 py-8 border-b border-[#e4e9ef]">
+            <span class="text-[#e2a43a] font-semibold text-base sm:text-[1.05rem] font-['Manrope',sans-serif]">05</span>
+            <div>
+              <h3 class="text-xl sm:text-2xl mb-2 text-[#071d31] font-['Manrope',sans-serif]">School Collaboration Initiatives</h3>
+              <p class="text-[#6b7788]">Partnering with schools to identify and support deserving students.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO WE SERVE -->
+    <section class="py-16 md:py-24 lg:py-[110px]">
+      <div class="w-full max-w-[1180px] mx-auto px-5 sm:px-7 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[70px] items-center">
+        <div class="reveal opacity-0 translate-y-6 transition-all duration-700 relative min-h-[420px] sm:min-h-[520px] lg:min-h-[650px] rounded-[28px] overflow-hidden bg-[linear-gradient(0deg,rgba(7,29,49,.68),rgba(7,29,49,.12)),url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1400&q=88')] bg-center bg-cover">
+          <span class="absolute z-[2] left-6 sm:left-[38px] top-10 sm:top-[54px] px-3.5 sm:px-4 py-3 rounded-xl bg-white/90 text-[#0d2d4a] text-xs sm:text-[0.78rem] font-semibold shadow-[0_16px_35px_rgba(7,29,49,0.14)]">Government Schools</span>
+          <span class="absolute z-[2] right-6 sm:right-[38px] top-28 sm:top-[145px] px-3.5 sm:px-4 py-3 rounded-xl bg-white/90 text-[#0d2d4a] text-xs sm:text-[0.78rem] font-semibold shadow-[0_16px_35px_rgba(7,29,49,0.14)]">Rural Communities</span>
+          <span class="absolute z-[2] left-8 sm:left-[60px] bottom-28 sm:bottom-[145px] px-3.5 sm:px-4 py-3 rounded-xl bg-white/90 text-[#0d2d4a] text-xs sm:text-[0.78rem] font-semibold shadow-[0_16px_35px_rgba(7,29,49,0.14)]">First-Generation Learners</span>
+          <span class="absolute z-[2] right-6 sm:right-[48px] bottom-8 sm:bottom-[60px] px-3.5 sm:px-4 py-3 rounded-xl bg-white/90 text-[#0d2d4a] text-xs sm:text-[0.78rem] font-semibold shadow-[0_16px_35px_rgba(7,29,49,0.14)]">Economically Weaker Families</span>
+          <span class="absolute z-[2] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 px-3.5 sm:px-4 py-3 rounded-xl bg-white/90 text-[#0d2d4a] text-xs sm:text-[0.78rem] font-semibold shadow-[0_16px_35px_rgba(7,29,49,0.14)]">Academic Potential</span>
+        </div>
+
+        <div class="reveal opacity-0 translate-y-6 transition-all duration-700">
+          <span class="inline-flex items-center gap-2.5 text-[#a66f13] text-xs font-semibold tracking-[0.14em] uppercase before:content-[''] before:w-7 before:h-px before:bg-current">Who We Serve</span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5rem] font-medium leading-[1.08] tracking-[-0.035em] text-[#071d31] mt-4 mb-6 font-['Manrope',sans-serif]">We focus on students with potential but limited access.</h2>
+          <p class="text-[#6b7788] mb-7">We primarily support learners who may not have access to coaching, mentoring, educational resources, or professional guidance.</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="px-4 py-[15px] border border-[#e4e9ef] rounded-[13px] text-[0.84rem] text-[#0d2d4a]">Government schools</div>
+            <div class="px-4 py-[15px] border border-[#e4e9ef] rounded-[13px] text-[0.84rem] text-[#0d2d4a]">Underprivileged children</div>
+            <div class="px-4 py-[15px] border border-[#e4e9ef] rounded-[13px] text-[0.84rem] text-[#0d2d4a]">Economically weaker families</div>
+            <div class="px-4 py-[15px] border border-[#e4e9ef] rounded-[13px] text-[0.84rem] text-[#0d2d4a]">Students with academic potential</div>
+            <div class="px-4 py-[15px] border border-[#e4e9ef] rounded-[13px] text-[0.84rem] text-[#0d2d4a]">Rural and semi-urban communities</div>
+            <div class="px-4 py-[15px] border border-[#e4e9ef] rounded-[13px] text-[0.84rem] text-[#0d2d4a]">First-generation learners</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOVERNANCE -->
+    <section class="py-16 md:py-24 lg:py-[110px] bg-[#071d31] text-white">
+      <div class="w-full max-w-[1180px] mx-auto px-5 sm:px-7 grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-20 items-end">
+        <div class="reveal opacity-0 translate-y-6 transition-all duration-700">
+          <span class="inline-flex items-center gap-2.5 text-[#efc979] text-xs font-semibold tracking-[0.14em] uppercase before:content-[''] before:w-7 before:h-px before:bg-current">Governance &amp; Transparency</span>
+          <h2 class="text-white font-medium max-w-[850px] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[6.2rem] leading-[1.08] tracking-[-0.035em] mt-4 mb-6 font-['Manrope',sans-serif]">Every contribution deserves responsible stewardship.</h2>
+          <p class="text-white/70">GiveWise Educational Foundation operates as a non-profit organization with a strong commitment to transparency, accountability, and ethical governance. The Foundation is managed by a Board of Directors in accordance with the Companies Act, 2013. We maintain responsible financial practices and ensure every contribution is utilized efficiently to maximize educational impact.</p>
+        </div>
+
+        <div class="grid gap-4">
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 pb-4 border-b border-white/15">
+            <strong class="block text-[#f4dfb6] font-medium text-2xl sm:text-[1.65rem] font-['Manrope',sans-serif]">Transparency</strong>
+            <span class="text-white/55 text-[0.78rem]">Clear communication and responsible reporting.</span>
+          </div>
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 pb-4 border-b border-white/15">
+            <strong class="block text-[#f4dfb6] font-medium text-2xl sm:text-[1.65rem] font-['Manrope',sans-serif]">Accountability</strong>
+            <span class="text-white/55 text-[0.78rem]">Every decision guided by measurable impact.</span>
+          </div>
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 pb-4 border-b border-white/15">
+            <strong class="block text-[#f4dfb6] font-medium text-2xl sm:text-[1.65rem] font-['Manrope',sans-serif]">Ethical Governance</strong>
+            <span class="text-white/55 text-[0.78rem]">Operations aligned with law, integrity, and public trust.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERS -->
+    <section id="leaders" class="py-16 md:py-24 lg:py-[110px]">
+      <div class="w-full max-w-[1180px] mx-auto px-5 sm:px-7">
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_0.65fr] gap-10 lg:gap-20 items-end mb-14 lg:mb-[70px]">
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700">
+            <span class="inline-flex items-center gap-2.5 text-[#a66f13] text-xs font-semibold tracking-[0.14em] uppercase before:content-[''] before:w-7 before:h-px before:bg-current">Our Visionary Leaders</span>
+            <h2 class="max-w-[820px] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5.2rem] font-medium leading-[1.08] tracking-[-0.035em] text-[#071d31] mt-4 font-['Manrope',sans-serif]">People building a stronger education ecosystem.</h2>
+          </div>
+          <p class="reveal opacity-0 translate-y-6 transition-all duration-700 text-[#6b7788] lg:pl-6 lg:border-l lg:border-[#e4e9ef]">GiveWise is led by professionals who combine education, compassion, technology, and community participation to create meaningful opportunities.</p>
+        </div>
+
+        <div class="grid gap-14 lg:gap-[70px]">
+          <article class="reveal opacity-0 translate-y-6 transition-all duration-700 grid grid-cols-1 lg:grid-cols-[0.88fr_1.12fr] gap-8 lg:gap-[60px] items-center">
+            <div class="relative h-[340px] sm:h-[430px] lg:h-[560px] rounded-[26px] overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-b after:from-[#071d31]/28 after:to-transparent">
+              <img src="/src/assets/Container (17).png" alt="Amit Kumar" class="w-full h-full object-cover" />
+            </div>
+            <div>
+              <span class="text-[#a56f16] text-xs font-semibold tracking-[0.13em] uppercase">Founder &amp; Director</span>
+              <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-[4.6rem] font-medium leading-[1.08] tracking-[-0.035em] text-[#071d31] mt-3.5 mb-2 font-['Manrope',sans-serif]">Amit Kumar</h3>
+              <div class="text-[#0d2d4a] text-sm mb-7">GiveWise Educational Foundation</div>
+              <p class="pl-6 border-l-2 border-[#e2a43a] text-[#6b7788]">Education has the power to transform lives, break barriers, and create opportunities that last for generations. Our mission is to ensure that every child, regardless of background, has access to quality education, guidance, and support. Through GiveWise Educational Foundation, we are committed to building a future where learning inspires confidence, innovation, and meaningful change.</p>
+            </div>
+          </article>
+
+          <article class="reveal opacity-0 translate-y-6 transition-all duration-700 grid grid-cols-1 lg:grid-cols-[1.12fr_0.88fr] gap-8 lg:gap-[60px] items-center">
+            <div class="order-2 lg:order-2 relative h-[340px] sm:h-[430px] lg:h-[560px] rounded-[26px] overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-b after:from-[#071d31]/28 after:to-transparent">
+              <img src="/src/assets/Container (18).png" alt="Alok Kumar Shukla" class="w-full h-full object-cover" />
+            </div>
+            <div class="order-1 lg:order-1">
+              <span class="text-[#a56f16] text-xs font-semibold tracking-[0.13em] uppercase">Co-Founder &amp; Director</span>
+              <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-[4.6rem] font-medium leading-[1.08] tracking-[-0.035em] text-[#071d31] mt-3.5 mb-2 font-['Manrope',sans-serif]">Alok Kumar Shukla</h3>
+              <div class="text-[#0d2d4a] text-sm mb-7">GiveWise Educational Foundation</div>
+              <p class="pl-6 border-l-2 border-[#e2a43a] text-[#6b7788]">Our vision is to build a strong ecosystem where educators, volunteers, and communities work together to empower students through knowledge and mentorship. By combining compassion with innovation, we strive to create opportunities that help every learner realize their true potential and contribute positively to society.</p>
+            </div>
+          </article>
+
+          <article class="reveal opacity-0 translate-y-6 transition-all duration-700 grid grid-cols-1 lg:grid-cols-[0.88fr_1.12fr] gap-8 lg:gap-[60px] items-center">
+            <div class="relative h-[340px] sm:h-[430px] lg:h-[560px] rounded-[26px] overflow-hidden after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-b after:from-[#071d31]/28 after:to-transparent">
+              <img src="/src/assets/Container (19).png" alt="Shubham Mishra" class="w-full h-full object-cover" />
+            </div>
+            <div>
+              <span class="text-[#a56f16] text-xs font-semibold tracking-[0.13em] uppercase">Director · Technocrat</span>
+              <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-[4.6rem] font-medium leading-[1.08] tracking-[-0.035em] text-[#071d31] mt-3.5 mb-2 font-['Manrope',sans-serif]">Shubham Mishra</h3>
+              <div class="text-[#0d2d4a] text-sm mb-7">IT Entrepreneur · Digital Infrastructure &amp; Operations</div>
+              <p class="pl-6 border-l-2 border-[#e2a43a] text-[#6b7788]">Technology has the ability to bridge educational gaps and create equal learning opportunities for every child. At GiveWise Educational Foundation, we leverage digital innovation, modern infrastructure, and collaborative platforms to ensure quality education reaches students regardless of geographical or economic barriers.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="join" class="min-h-[420px] sm:min-h-[500px] lg:min-h-[560px] flex items-end text-white bg-[linear-gradient(90deg,rgba(7,29,49,.9),rgba(7,29,49,.44)_60%,rgba(7,29,49,.15)),url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=2000&q=88')] bg-center bg-cover">
+      <div class="reveal opacity-0 translate-y-6 transition-all duration-700 w-full max-w-[1180px] mx-auto px-5 sm:px-7 max-w-[900px] py-16 sm:py-24 lg:py-[100px] pb-14 lg:pb-[72px]">
+        <span class="inline-flex items-center gap-2.5 text-[#efc979] text-xs font-semibold tracking-[0.14em] uppercase before:content-[''] before:w-7 before:h-px before:bg-current">Join Our Mission</span>
+        <h2 class="text-white font-medium text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-[6.2rem] leading-[1.08] tracking-[-0.035em] mt-4 mb-7 font-['Manrope',sans-serif]">Together, we can light the lamp of knowledge in every corner of our nation.</h2>
+        <a href="#" class="inline-flex items-center justify-center gap-2 min-h-[42px] px-[17px] rounded-xl text-sm font-semibold bg-[#e2a43a] text-[#071d31] hover:-translate-y-0.5 transition-transform duration-200">Join Us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <!-- ================= FOOTER ================= -->
+    <footer id="contact" class="bg-[#102a4b] pt-16 lg:pt-20 pb-8">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-10 pb-12 lg:pb-14 border-b border-white/10"
+        >
+          <div class="sm:col-span-2 lg:col-span-1 xl:col-span-2">
+            <div class="flex items-center gap-2 mb-4">
+              <a href="#" class="flex items-center gap-2 shrink-0">
+                <div id="logo" class="w-28 h-12">
+                  <img src="/src/assets/Frame2.png" alt="logo" class="w-full h-full object-contain" />
+                </div>
+              </a>
+            </div>
+            <p class="font-body text-white/50 text-sm leading-relaxed max-w-xs">
+              GiveWise Education Foundation supports students with quality
+              education, mentorship, digital skills, scholarships, and a fair
+              start in life.
+            </p>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-white font-display font-semibold text-sm mb-5">
+              Quick Links
+            </h4>
+            <ul class="font-body space-y-3 text-sm text-white/50">
+              <li>
+                <a href="/index.html" class="hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="/campaigns.html" class="hover:text-white transition-colors"
+                  >Campaigns</a
+                >
+              </li>
+              <li>
+                <a href="/about.html" class="hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="/blog.html" class="hover:text-white transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="/contact.html" class="hover:text-white transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-white font-display font-semibold text-sm mb-5">
+              Programs
+            </h4>
+            <ul class="font-body space-y-3 text-sm text-white/50">
+              <li>
+                <a href="#programs" class="hover:text-white transition-colors"
+                  >Digital Pathshala</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >For Students</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Mera Sankalp</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Volunteer Program</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full">
+            <h4 class="text-white font-display font-semibold text-sm mb-5">
+              Contact
+            </h4>
+            <ul class="font-body space-y-3 text-sm text-white/50">
+              <li>
+                <a href="#home" class="hover:text-white transition-colors"
+                  >Hello@givwise.org</a
+                >
+              </li>
+              <li>
+                <a href="#programs" class="hover:text-white transition-colors"
+                  >+1 234567890</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-white transition-colors"
+                  >New Delhi, India</a
+                >
+              </li>
+              <li>
+                <a href="/src/Pages/blog.html" class="hover:text-white transition-colors"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full sm:col-span-2 lg:col-span-1">
+            <h4 class="text-white font-display font-semibold text-sm mb-5 w-40">
+              Stay Connected
+            </h4>
+            <p class="font-body text-white/50 text-sm mb-4">
+              Get updates on stories, students, and campaigns.
+            </p>
+             <form id="newsletter-form" class="flex w-full">
+              <input
+                type="email"
+                required
+                placeholder="Your email"
+                class="flex-1 min-w-0 rounded-bl-[10px] rounded-tl-[10px] bg-white/10 border border-white/15 text-white text-sm placeholder-white/40 px-4 py-2.5 outline-none"
+              />
+              <button
+                type="submit"
+                class="shrink-0 rounded-br-[10px] rounded-tr-[10px] font-bold bg-amber text-ink text-sm  px-4 hover:bg-amberdark transition-colors"
+              >
+                →
+              </button>
+            </form>
+            <p id="newsletter-msg" class="font-body text-amber text-xs mt-3 hidden">
+              Thanks for subscribing!
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"
+        >
+          <p class="font-body text-white/40 text-xs text-center sm:text-left">
+            © <span id="year"></span> GiveWise Education Foundation. All rights
+            reserved.
+          </p>
+          <div class="flex gap-6 text-white/40 text-xs">
+            <a href="#" class="hover:text-white transition-colors"
+              >facebook</a
+            >
+            <a href="#" class="hover:text-white transition-colors"
+              >Instagram</a
+            >
+             <a href="#" class="hover:text-white transition-colors"
+              >LinkdIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="/src/JS/index.js"></script>
+</body>
+</html>
